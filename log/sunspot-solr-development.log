@@ -1,352 +1,481 @@
-May 17, 2015 2:49:21 PM org.apache.solr.servlet.SolrDispatchFilter init
+May 17, 2015 3:17:08 PM org.apache.solr.servlet.SolrDispatchFilter init
 INFO: SolrDispatchFilter.init()
-May 17, 2015 2:49:21 PM org.apache.solr.core.SolrResourceLoader locateSolrHome
+May 17, 2015 3:17:08 PM org.apache.solr.core.SolrResourceLoader locateSolrHome
 INFO: JNDI not configured for solr (NoInitialContextEx)
-May 17, 2015 2:49:21 PM org.apache.solr.core.SolrResourceLoader locateSolrHome
+May 17, 2015 3:17:08 PM org.apache.solr.core.SolrResourceLoader locateSolrHome
 INFO: using system property solr.solr.home: /home/commander/sandbox/linkPad4/solr
-May 17, 2015 2:49:21 PM org.apache.solr.core.CoreContainer$Initializer initialize
+May 17, 2015 3:17:08 PM org.apache.solr.core.CoreContainer$Initializer initialize
 INFO: looking for solr.xml: /home/commander/sandbox/linkPad4/solr/solr.xml
-May 17, 2015 2:49:21 PM org.apache.solr.core.CoreContainer <init>
-INFO: New CoreContainer 1371534691
-May 17, 2015 2:49:21 PM org.apache.solr.core.CoreContainer load
+May 17, 2015 3:17:08 PM org.apache.solr.core.CoreContainer <init>
+INFO: New CoreContainer 225959996
+May 17, 2015 3:17:08 PM org.apache.solr.core.CoreContainer load
 INFO: Loading CoreContainer using Solr Home: '/home/commander/sandbox/linkPad4/solr/'
-May 17, 2015 2:49:21 PM org.apache.solr.core.SolrResourceLoader <init>
+May 17, 2015 3:17:08 PM org.apache.solr.core.SolrResourceLoader <init>
 INFO: new SolrResourceLoader for directory: '/home/commander/sandbox/linkPad4/solr/'
-May 17, 2015 2:49:22 PM org.apache.solr.handler.component.HttpShardHandlerFactory getParameter
+May 17, 2015 3:17:08 PM org.apache.solr.handler.component.HttpShardHandlerFactory getParameter
 INFO: Setting socketTimeout to: 0
-May 17, 2015 2:49:22 PM org.apache.solr.handler.component.HttpShardHandlerFactory getParameter
+May 17, 2015 3:17:08 PM org.apache.solr.handler.component.HttpShardHandlerFactory getParameter
 INFO: Setting urlScheme to: http://
-May 17, 2015 2:49:22 PM org.apache.solr.handler.component.HttpShardHandlerFactory getParameter
+May 17, 2015 3:17:08 PM org.apache.solr.handler.component.HttpShardHandlerFactory getParameter
 INFO: Setting connTimeout to: 0
-May 17, 2015 2:49:22 PM org.apache.solr.handler.component.HttpShardHandlerFactory getParameter
+May 17, 2015 3:17:08 PM org.apache.solr.handler.component.HttpShardHandlerFactory getParameter
 INFO: Setting maxConnectionsPerHost to: 20
-May 17, 2015 2:49:22 PM org.apache.solr.handler.component.HttpShardHandlerFactory getParameter
+May 17, 2015 3:17:08 PM org.apache.solr.handler.component.HttpShardHandlerFactory getParameter
 INFO: Setting corePoolSize to: 0
-May 17, 2015 2:49:22 PM org.apache.solr.handler.component.HttpShardHandlerFactory getParameter
+May 17, 2015 3:17:08 PM org.apache.solr.handler.component.HttpShardHandlerFactory getParameter
 INFO: Setting maximumPoolSize to: 2147483647
-May 17, 2015 2:49:22 PM org.apache.solr.handler.component.HttpShardHandlerFactory getParameter
+May 17, 2015 3:17:08 PM org.apache.solr.handler.component.HttpShardHandlerFactory getParameter
 INFO: Setting maxThreadIdleTime to: 5
-May 17, 2015 2:49:22 PM org.apache.solr.handler.component.HttpShardHandlerFactory getParameter
+May 17, 2015 3:17:08 PM org.apache.solr.handler.component.HttpShardHandlerFactory getParameter
 INFO: Setting sizeOfQueue to: -1
-May 17, 2015 2:49:22 PM org.apache.solr.handler.component.HttpShardHandlerFactory getParameter
+May 17, 2015 3:17:08 PM org.apache.solr.handler.component.HttpShardHandlerFactory getParameter
 INFO: Setting fairnessPolicy to: false
-May 17, 2015 2:49:22 PM org.apache.solr.client.solrj.impl.HttpClientUtil createClient
+May 17, 2015 3:17:08 PM org.apache.solr.client.solrj.impl.HttpClientUtil createClient
 INFO: Creating new http client, config:maxConnectionsPerHost=20&maxConnections=10000&socketTimeout=0&connTimeout=0&retry=false
-May 17, 2015 2:49:22 PM org.apache.solr.core.CoreContainer load
+May 17, 2015 3:17:08 PM org.apache.solr.core.CoreContainer load
 INFO: Registering Log Listener
-May 17, 2015 2:49:22 PM org.apache.solr.core.CoreContainer create
+May 17, 2015 3:17:08 PM org.apache.solr.core.CoreContainer create
 INFO: Creating SolrCore 'default' using instanceDir: /home/commander/sandbox/linkPad4/solr/.
-May 17, 2015 2:49:22 PM org.apache.solr.core.CoreContainer create
+May 17, 2015 3:17:08 PM org.apache.solr.core.CoreContainer create
 INFO: Creating SolrCore 'development' using instanceDir: /home/commander/sandbox/linkPad4/solr/.
-May 17, 2015 2:49:22 PM org.apache.solr.core.SolrResourceLoader <init>
+May 17, 2015 3:17:08 PM org.apache.solr.core.SolrResourceLoader <init>
 INFO: new SolrResourceLoader for directory: '/home/commander/sandbox/linkPad4/solr/./'
-May 17, 2015 2:49:22 PM org.apache.solr.core.CoreContainer create
+May 17, 2015 3:17:08 PM org.apache.solr.core.SolrResourceLoader <init>
+INFO: new SolrResourceLoader for directory: '/home/commander/sandbox/linkPad4/solr/./'
+May 17, 2015 3:17:08 PM org.apache.solr.core.CoreContainer create
 INFO: Creating SolrCore 'test' using instanceDir: /home/commander/sandbox/linkPad4/solr/.
-May 17, 2015 2:49:22 PM org.apache.solr.core.SolrResourceLoader <init>
+May 17, 2015 3:17:08 PM org.apache.solr.core.SolrResourceLoader <init>
 INFO: new SolrResourceLoader for directory: '/home/commander/sandbox/linkPad4/solr/./'
-May 17, 2015 2:49:22 PM org.apache.solr.core.SolrResourceLoader <init>
-INFO: new SolrResourceLoader for directory: '/home/commander/sandbox/linkPad4/solr/./'
-May 17, 2015 2:49:22 PM org.apache.solr.core.SolrConfig <init>
+May 17, 2015 3:17:08 PM org.apache.solr.core.SolrConfig <init>
 INFO: Using Lucene MatchVersion: LUCENE_41
-May 17, 2015 2:49:22 PM org.apache.solr.core.SolrConfig <init>
+May 17, 2015 3:17:08 PM org.apache.solr.core.SolrConfig <init>
 INFO: Using Lucene MatchVersion: LUCENE_41
-May 17, 2015 2:49:22 PM org.apache.solr.core.SolrConfig <init>
+May 17, 2015 3:17:08 PM org.apache.solr.core.SolrConfig <init>
 INFO: Using Lucene MatchVersion: LUCENE_41
-May 17, 2015 2:49:22 PM org.apache.solr.core.SolrConfig <init>
+May 17, 2015 3:17:09 PM org.apache.solr.core.SolrConfig <init>
 INFO: Loaded SolrConfig: solrconfig.xml
-May 17, 2015 2:49:22 PM org.apache.solr.core.SolrConfig <init>
+May 17, 2015 3:17:09 PM org.apache.solr.core.SolrConfig <init>
 INFO: Loaded SolrConfig: solrconfig.xml
-May 17, 2015 2:49:22 PM org.apache.solr.schema.IndexSchema readSchema
+May 17, 2015 3:17:09 PM org.apache.solr.schema.IndexSchema readSchema
 INFO: Reading Solr Schema
-May 17, 2015 2:49:22 PM org.apache.solr.schema.IndexSchema readSchema
+May 17, 2015 3:17:09 PM org.apache.solr.schema.IndexSchema readSchema
 INFO: Reading Solr Schema
-May 17, 2015 2:49:22 PM org.apache.solr.core.SolrConfig <init>
+May 17, 2015 3:17:09 PM org.apache.solr.core.SolrConfig <init>
 INFO: Loaded SolrConfig: solrconfig.xml
-May 17, 2015 2:49:22 PM org.apache.solr.schema.IndexSchema readSchema
+May 17, 2015 3:17:09 PM org.apache.solr.schema.IndexSchema readSchema
 INFO: Reading Solr Schema
-May 17, 2015 2:49:22 PM org.apache.solr.schema.IndexSchema readSchema
+May 17, 2015 3:17:09 PM org.apache.solr.schema.IndexSchema readSchema
 INFO: Schema name=sunspot
-May 17, 2015 2:49:22 PM org.apache.solr.schema.IndexSchema readSchema
+May 17, 2015 3:17:09 PM org.apache.solr.schema.IndexSchema readSchema
 INFO: Schema name=sunspot
-May 17, 2015 2:49:22 PM org.apache.solr.schema.IndexSchema readSchema
+May 17, 2015 3:17:09 PM org.apache.solr.schema.IndexSchema readSchema
 INFO: Schema name=sunspot
-May 17, 2015 2:49:22 PM org.apache.solr.schema.IndexSchema readSchema
+May 17, 2015 3:17:09 PM org.apache.solr.schema.IndexSchema readSchema
 INFO: default search field in schema is text
-May 17, 2015 2:49:22 PM org.apache.solr.schema.IndexSchema readSchema
-INFO: query parser default operator is AND
-May 17, 2015 2:49:22 PM org.apache.solr.schema.IndexSchema readSchema
-INFO: unique key field: id
-May 17, 2015 2:49:22 PM org.apache.solr.schema.IndexSchema readSchema
+May 17, 2015 3:17:09 PM org.apache.solr.schema.IndexSchema readSchema
 INFO: default search field in schema is text
-May 17, 2015 2:49:22 PM org.apache.solr.schema.IndexSchema readSchema
+May 17, 2015 3:17:09 PM org.apache.solr.schema.IndexSchema readSchema
 INFO: query parser default operator is AND
-May 17, 2015 2:49:22 PM org.apache.solr.schema.IndexSchema readSchema
+May 17, 2015 3:17:09 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: query parser default operator is AND
+May 17, 2015 3:17:09 PM org.apache.solr.schema.IndexSchema readSchema
 INFO: unique key field: id
-May 17, 2015 2:49:22 PM org.apache.solr.schema.IndexSchema readSchema
+May 17, 2015 3:17:09 PM org.apache.solr.schema.IndexSchema readSchema
+INFO: unique key field: id
+May 17, 2015 3:17:09 PM org.apache.solr.schema.IndexSchema readSchema
 INFO: default search field in schema is text
-May 17, 2015 2:49:22 PM org.apache.solr.schema.IndexSchema readSchema
+May 17, 2015 3:17:09 PM org.apache.solr.schema.IndexSchema readSchema
 INFO: query parser default operator is AND
-May 17, 2015 2:49:22 PM org.apache.solr.schema.IndexSchema readSchema
+May 17, 2015 3:17:09 PM org.apache.solr.schema.IndexSchema readSchema
 INFO: unique key field: id
-May 17, 2015 2:49:22 PM org.apache.solr.core.SolrCore <init>
-INFO: [default] Opening new SolrCore at /home/commander/sandbox/linkPad4/solr/./, dataDir=/home/commander/sandbox/linkPad4/solr/./default/data/
-May 17, 2015 2:49:22 PM org.apache.solr.core.SolrCore <init>
-INFO: JMX monitoring not detected for core: default
-May 17, 2015 2:49:22 PM org.apache.solr.core.SolrCore <init>
+May 17, 2015 3:17:09 PM org.apache.solr.core.SolrCore <init>
 INFO: [test] Opening new SolrCore at /home/commander/sandbox/linkPad4/solr/./, dataDir=/home/commander/sandbox/linkPad4/solr/./test/data/
-May 17, 2015 2:49:22 PM org.apache.solr.core.SolrCore <init>
-INFO: [development] Opening new SolrCore at /home/commander/sandbox/linkPad4/solr/./, dataDir=/home/commander/sandbox/linkPad4/solr/./development/data/
-May 17, 2015 2:49:22 PM org.apache.solr.core.SolrCore <init>
-INFO: JMX monitoring not detected for core: development
-May 17, 2015 2:49:22 PM org.apache.solr.core.SolrCore <init>
+May 17, 2015 3:17:09 PM org.apache.solr.core.SolrCore <init>
 INFO: JMX monitoring not detected for core: test
-May 17, 2015 2:49:22 PM org.apache.solr.core.SolrCore initDirectoryFactory
+May 17, 2015 3:17:09 PM org.apache.solr.core.SolrCore <init>
+INFO: [default] Opening new SolrCore at /home/commander/sandbox/linkPad4/solr/./, dataDir=/home/commander/sandbox/linkPad4/solr/./default/data/
+May 17, 2015 3:17:09 PM org.apache.solr.core.SolrCore <init>
+INFO: [development] Opening new SolrCore at /home/commander/sandbox/linkPad4/solr/./, dataDir=/home/commander/sandbox/linkPad4/solr/./development/data/
+May 17, 2015 3:17:09 PM org.apache.solr.core.SolrCore <init>
+INFO: JMX monitoring not detected for core: development
+May 17, 2015 3:17:09 PM org.apache.solr.core.SolrCore <init>
+INFO: JMX monitoring not detected for core: default
+May 17, 2015 3:17:09 PM org.apache.solr.core.SolrCore initDirectoryFactory
 INFO: solr.NRTCachingDirectoryFactory
-May 17, 2015 2:49:22 PM org.apache.solr.core.SolrCore initDirectoryFactory
+May 17, 2015 3:17:09 PM org.apache.solr.core.SolrCore initDirectoryFactory
 INFO: solr.NRTCachingDirectoryFactory
-May 17, 2015 2:49:22 PM org.apache.solr.core.SolrCore initDirectoryFactory
+May 17, 2015 3:17:09 PM org.apache.solr.core.SolrCore initDirectoryFactory
 INFO: solr.NRTCachingDirectoryFactory
-May 17, 2015 2:49:22 PM org.apache.solr.core.CachingDirectoryFactory get
-INFO: return new directory for /home/commander/sandbox/linkPad4/solr/./development/data forceNew: false
-May 17, 2015 2:49:22 PM org.apache.solr.core.CachingDirectoryFactory get
-INFO: return new directory for /home/commander/sandbox/linkPad4/solr/./test/data forceNew: false
-May 17, 2015 2:49:22 PM org.apache.solr.core.CachingDirectoryFactory get
+May 17, 2015 3:17:09 PM org.apache.solr.core.CachingDirectoryFactory get
 INFO: return new directory for /home/commander/sandbox/linkPad4/solr/./default/data forceNew: false
-May 17, 2015 2:49:22 PM org.apache.solr.core.SolrCore getNewIndexDir
-INFO: New index directory detected: old=null new=/home/commander/sandbox/linkPad4/solr/./test/data/index/
-May 17, 2015 2:49:22 PM org.apache.solr.core.SolrCore getNewIndexDir
+May 17, 2015 3:17:09 PM org.apache.solr.core.CachingDirectoryFactory get
+INFO: return new directory for /home/commander/sandbox/linkPad4/solr/./development/data forceNew: false
+May 17, 2015 3:17:09 PM org.apache.solr.core.SolrCore getNewIndexDir
 INFO: New index directory detected: old=null new=/home/commander/sandbox/linkPad4/solr/./development/data/index/
-May 17, 2015 2:49:22 PM org.apache.solr.core.CachingDirectoryFactory get
+May 17, 2015 3:17:09 PM org.apache.solr.core.CachingDirectoryFactory get
+INFO: return new directory for /home/commander/sandbox/linkPad4/solr/./test/data forceNew: false
+May 17, 2015 3:17:09 PM org.apache.solr.core.SolrCore getNewIndexDir
+INFO: New index directory detected: old=null new=/home/commander/sandbox/linkPad4/solr/./test/data/index/
+May 17, 2015 3:17:09 PM org.apache.solr.core.CachingDirectoryFactory get
 INFO: return new directory for /home/commander/sandbox/linkPad4/solr/./test/data/index forceNew: false
-May 17, 2015 2:49:22 PM org.apache.solr.core.SolrCore getNewIndexDir
+May 17, 2015 3:17:09 PM org.apache.solr.core.SolrCore getNewIndexDir
 INFO: New index directory detected: old=null new=/home/commander/sandbox/linkPad4/solr/./default/data/index/
-May 17, 2015 2:49:22 PM org.apache.solr.core.CachingDirectoryFactory get
-INFO: return new directory for /home/commander/sandbox/linkPad4/solr/./development/data/index forceNew: false
-May 17, 2015 2:49:22 PM org.apache.solr.core.CachingDirectoryFactory get
+May 17, 2015 3:17:09 PM org.apache.solr.core.CachingDirectoryFactory get
 INFO: return new directory for /home/commander/sandbox/linkPad4/solr/./default/data/index forceNew: false
-May 17, 2015 2:49:22 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+May 17, 2015 3:17:09 PM org.apache.solr.core.CachingDirectoryFactory get
+INFO: return new directory for /home/commander/sandbox/linkPad4/solr/./development/data/index forceNew: false
+May 17, 2015 3:17:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created /select: solr.SearchHandler
-May 17, 2015 2:49:22 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+May 17, 2015 3:17:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created /query: solr.SearchHandler
-May 17, 2015 2:49:22 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+May 17, 2015 3:17:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created /select: solr.SearchHandler
-May 17, 2015 2:49:22 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+May 17, 2015 3:17:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created /query: solr.SearchHandler
-May 17, 2015 2:49:22 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+May 17, 2015 3:17:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /get: solr.RealTimeGetHandler
+May 17, 2015 3:17:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created /select: solr.SearchHandler
-May 17, 2015 2:49:22 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
-INFO: created /get: solr.RealTimeGetHandler
-May 17, 2015 2:49:22 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+May 17, 2015 3:17:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created /query: solr.SearchHandler
-May 17, 2015 2:49:22 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+May 17, 2015 3:17:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created /get: solr.RealTimeGetHandler
-May 17, 2015 2:49:22 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
-INFO: created /update: solr.UpdateRequestHandler
-May 17, 2015 2:49:22 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+May 17, 2015 3:17:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created /get: solr.RealTimeGetHandler
-May 17, 2015 2:49:22 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+May 17, 2015 3:17:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created /update: solr.UpdateRequestHandler
-May 17, 2015 2:49:22 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
-INFO: created /update/json: solr.JsonUpdateRequestHandler
-May 17, 2015 2:49:22 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+May 17, 2015 3:17:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created /update: solr.UpdateRequestHandler
-May 17, 2015 2:49:22 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+May 17, 2015 3:17:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /update: solr.UpdateRequestHandler
+May 17, 2015 3:17:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created /update/json: solr.JsonUpdateRequestHandler
-May 17, 2015 2:49:22 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+May 17, 2015 3:17:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created /update/json: solr.JsonUpdateRequestHandler
-May 17, 2015 2:49:22 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+May 17, 2015 3:17:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /update/json: solr.JsonUpdateRequestHandler
+May 17, 2015 3:17:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created /update/csv: solr.CSVRequestHandler
-May 17, 2015 2:49:22 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+May 17, 2015 3:17:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: adding lazy requestHandler: solr.extraction.ExtractingRequestHandler
-May 17, 2015 2:49:22 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+May 17, 2015 3:17:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /update/extract: solr.extraction.ExtractingRequestHandler
+May 17, 2015 3:17:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: adding lazy requestHandler: solr.FieldAnalysisRequestHandler
+May 17, 2015 3:17:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /analysis/field: solr.FieldAnalysisRequestHandler
+May 17, 2015 3:17:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: adding lazy requestHandler: solr.DocumentAnalysisRequestHandler
+May 17, 2015 3:17:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /analysis/document: solr.DocumentAnalysisRequestHandler
+May 17, 2015 3:17:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created /update/csv: solr.CSVRequestHandler
-May 17, 2015 2:49:22 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+May 17, 2015 3:17:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: adding lazy requestHandler: solr.extraction.ExtractingRequestHandler
-May 17, 2015 2:49:22 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+May 17, 2015 3:17:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created /update/extract: solr.extraction.ExtractingRequestHandler
-May 17, 2015 2:49:22 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
-INFO: adding lazy requestHandler: solr.FieldAnalysisRequestHandler
-May 17, 2015 2:49:22 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
-INFO: created /update/extract: solr.extraction.ExtractingRequestHandler
-May 17, 2015 2:49:22 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+May 17, 2015 3:17:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created /update/csv: solr.CSVRequestHandler
-May 17, 2015 2:49:22 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
-INFO: adding lazy requestHandler: solr.FieldAnalysisRequestHandler
-May 17, 2015 2:49:22 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
-INFO: created /analysis/field: solr.FieldAnalysisRequestHandler
-May 17, 2015 2:49:22 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
-INFO: adding lazy requestHandler: solr.DocumentAnalysisRequestHandler
-May 17, 2015 2:49:22 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
-INFO: created /analysis/document: solr.DocumentAnalysisRequestHandler
-May 17, 2015 2:49:22 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
-INFO: created /analysis/field: solr.FieldAnalysisRequestHandler
-May 17, 2015 2:49:22 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
-INFO: adding lazy requestHandler: solr.DocumentAnalysisRequestHandler
-May 17, 2015 2:49:22 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
-INFO: created /analysis/document: solr.DocumentAnalysisRequestHandler
-May 17, 2015 2:49:22 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+May 17, 2015 3:17:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: adding lazy requestHandler: solr.extraction.ExtractingRequestHandler
-May 17, 2015 2:49:22 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
-INFO: created /admin/ping: solr.PingRequestHandler
-May 17, 2015 2:49:22 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
-INFO: created /admin/ping: solr.PingRequestHandler
-May 17, 2015 2:49:22 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+May 17, 2015 3:17:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created /update/extract: solr.extraction.ExtractingRequestHandler
-May 17, 2015 2:49:22 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+May 17, 2015 3:17:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: adding lazy requestHandler: solr.FieldAnalysisRequestHandler
-May 17, 2015 2:49:22 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+May 17, 2015 3:17:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created /analysis/field: solr.FieldAnalysisRequestHandler
-May 17, 2015 2:49:22 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
-INFO: created /debug/dump: solr.DumpRequestHandler
-May 17, 2015 2:49:22 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
-INFO: created /debug/dump: solr.DumpRequestHandler
-May 17, 2015 2:49:22 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+May 17, 2015 3:17:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: adding lazy requestHandler: solr.DocumentAnalysisRequestHandler
-May 17, 2015 2:49:22 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+May 17, 2015 3:17:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created /analysis/document: solr.DocumentAnalysisRequestHandler
-May 17, 2015 2:49:22 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+May 17, 2015 3:17:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: adding lazy requestHandler: solr.FieldAnalysisRequestHandler
+May 17, 2015 3:17:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created /admin/ping: solr.PingRequestHandler
-May 17, 2015 2:49:22 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+May 17, 2015 3:17:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /analysis/field: solr.FieldAnalysisRequestHandler
+May 17, 2015 3:17:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: adding lazy requestHandler: solr.DocumentAnalysisRequestHandler
+May 17, 2015 3:17:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /analysis/document: solr.DocumentAnalysisRequestHandler
+May 17, 2015 3:17:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /admin/ping: solr.PingRequestHandler
+May 17, 2015 3:17:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /admin/ping: solr.PingRequestHandler
+May 17, 2015 3:17:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created /debug/dump: solr.DumpRequestHandler
-May 17, 2015 2:49:22 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+May 17, 2015 3:17:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /debug/dump: solr.DumpRequestHandler
+May 17, 2015 3:17:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /debug/dump: solr.DumpRequestHandler
+May 17, 2015 3:17:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created /replication: solr.ReplicationHandler
-May 17, 2015 2:49:22 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+May 17, 2015 3:17:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created /replication: solr.ReplicationHandler
-May 17, 2015 2:49:22 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+May 17, 2015 3:17:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created /replication: solr.ReplicationHandler
-May 17, 2015 2:49:22 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+May 17, 2015 3:17:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created /mlt: solr.MoreLikeThisHandler
-May 17, 2015 2:49:22 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+May 17, 2015 3:17:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created /mlt: solr.MoreLikeThisHandler
-May 17, 2015 2:49:22 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+May 17, 2015 3:17:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created /admin/: solr.admin.AdminHandlers
-May 17, 2015 2:49:22 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+May 17, 2015 3:17:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created /admin/: solr.admin.AdminHandlers
-May 17, 2015 2:49:22 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+May 17, 2015 3:17:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created /mlt: solr.MoreLikeThisHandler
-May 17, 2015 2:49:22 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+May 17, 2015 3:17:09 PM org.apache.solr.core.RequestHandlers initHandlersFromConfig
 INFO: created /admin/: solr.admin.AdminHandlers
-May 17, 2015 2:49:22 PM org.apache.solr.handler.loader.XMLLoader init
+May 17, 2015 3:17:09 PM org.apache.solr.handler.loader.XMLLoader init
 INFO: xsltCacheLifetimeSeconds=60
-May 17, 2015 2:49:22 PM org.apache.solr.handler.loader.XMLLoader init
+May 17, 2015 3:17:09 PM org.apache.solr.handler.loader.XMLLoader init
 INFO: xsltCacheLifetimeSeconds=60
-May 17, 2015 2:49:22 PM org.apache.solr.handler.loader.XMLLoader init
+May 17, 2015 3:17:09 PM org.apache.solr.handler.loader.XMLLoader init
 INFO: xsltCacheLifetimeSeconds=60
-May 17, 2015 2:49:22 PM org.apache.solr.handler.loader.XMLLoader init
+May 17, 2015 3:17:09 PM org.apache.solr.handler.loader.XMLLoader init
 INFO: xsltCacheLifetimeSeconds=60
-May 17, 2015 2:49:22 PM org.apache.solr.handler.loader.XMLLoader init
+May 17, 2015 3:17:09 PM org.apache.solr.handler.loader.XMLLoader init
 INFO: xsltCacheLifetimeSeconds=60
-May 17, 2015 2:49:22 PM org.apache.solr.handler.loader.XMLLoader init
+May 17, 2015 3:17:09 PM org.apache.solr.handler.loader.XMLLoader init
 INFO: xsltCacheLifetimeSeconds=60
-May 17, 2015 2:49:22 PM org.apache.solr.handler.loader.XMLLoader init
+May 17, 2015 3:17:09 PM org.apache.solr.handler.loader.XMLLoader init
 INFO: xsltCacheLifetimeSeconds=60
-May 17, 2015 2:49:22 PM org.apache.solr.handler.loader.XMLLoader init
+May 17, 2015 3:17:09 PM org.apache.solr.handler.loader.XMLLoader init
 INFO: xsltCacheLifetimeSeconds=60
-May 17, 2015 2:49:22 PM org.apache.solr.handler.loader.XMLLoader init
+May 17, 2015 3:17:09 PM org.apache.solr.handler.loader.XMLLoader init
 INFO: xsltCacheLifetimeSeconds=60
-May 17, 2015 2:49:22 PM org.apache.solr.search.SolrIndexSearcher <init>
-INFO: Opening Searcher@362de08a main
-May 17, 2015 2:49:22 PM org.apache.solr.search.SolrIndexSearcher <init>
-INFO: Opening Searcher@7df09fcf main
-May 17, 2015 2:49:22 PM org.apache.solr.update.CommitTracker <init>
+May 17, 2015 3:17:09 PM org.apache.solr.search.SolrIndexSearcher <init>
+INFO: Opening Searcher@576ddaaa main
+May 17, 2015 3:17:09 PM org.apache.solr.search.SolrIndexSearcher <init>
+INFO: Opening Searcher@28fa85ea main
+May 17, 2015 3:17:09 PM org.apache.solr.update.CommitTracker <init>
 INFO: Hard AutoCommit: if uncommited for 15000ms; 
-May 17, 2015 2:49:22 PM org.apache.solr.update.CommitTracker <init>
+May 17, 2015 3:17:09 PM org.apache.solr.update.CommitTracker <init>
 INFO: Hard AutoCommit: if uncommited for 15000ms; 
-May 17, 2015 2:49:22 PM org.apache.solr.update.CommitTracker <init>
+May 17, 2015 3:17:09 PM org.apache.solr.update.CommitTracker <init>
 INFO: Soft AutoCommit: if uncommited for 5000ms; 
-May 17, 2015 2:49:22 PM org.apache.solr.handler.component.SpellCheckComponent inform
-INFO: Initializing spell checkers
-May 17, 2015 2:49:22 PM org.apache.solr.update.CommitTracker <init>
+May 17, 2015 3:17:09 PM org.apache.solr.update.CommitTracker <init>
 INFO: Soft AutoCommit: if uncommited for 5000ms; 
-May 17, 2015 2:49:22 PM org.apache.solr.handler.component.SpellCheckComponent inform
+May 17, 2015 3:17:09 PM org.apache.solr.handler.component.SpellCheckComponent inform
 INFO: Initializing spell checkers
-May 17, 2015 2:49:22 PM org.apache.solr.search.SolrIndexSearcher <init>
-INFO: Opening Searcher@539a5002 main
-May 17, 2015 2:49:22 PM org.apache.solr.update.CommitTracker <init>
+May 17, 2015 3:17:09 PM org.apache.solr.handler.component.SpellCheckComponent inform
+INFO: Initializing spell checkers
+May 17, 2015 3:17:09 PM org.apache.solr.search.SolrIndexSearcher <init>
+INFO: Opening Searcher@56f8d74c main
+May 17, 2015 3:17:09 PM org.apache.solr.update.CommitTracker <init>
 INFO: Hard AutoCommit: if uncommited for 15000ms; 
-May 17, 2015 2:49:22 PM org.apache.solr.update.CommitTracker <init>
+May 17, 2015 3:17:09 PM org.apache.solr.update.CommitTracker <init>
 INFO: Soft AutoCommit: if uncommited for 5000ms; 
-May 17, 2015 2:49:22 PM org.apache.solr.handler.component.SpellCheckComponent inform
+May 17, 2015 3:17:09 PM org.apache.solr.handler.component.SpellCheckComponent inform
 INFO: Initializing spell checkers
-May 17, 2015 2:49:23 PM org.apache.solr.handler.component.SpellCheckComponent inform
+May 17, 2015 3:17:09 PM org.apache.solr.handler.component.SpellCheckComponent inform
 INFO: Registering newSearcher listener for spellchecker: default
-May 17, 2015 2:49:23 PM org.apache.solr.handler.component.SpellCheckComponent inform
+May 17, 2015 3:17:09 PM org.apache.solr.handler.component.SpellCheckComponent inform
 INFO: Registering newSearcher listener for spellchecker: default
-May 17, 2015 2:49:23 PM org.apache.solr.handler.component.SpellCheckComponent inform
+May 17, 2015 3:17:09 PM org.apache.solr.handler.component.SpellCheckComponent inform
 INFO: Registering newSearcher listener for spellchecker: default
-May 17, 2015 2:49:23 PM org.apache.solr.spelling.DirectSolrSpellChecker init
+May 17, 2015 3:17:09 PM org.apache.solr.spelling.DirectSolrSpellChecker init
 INFO: init: {name=example,field=title_text,buildOnCommit=true,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
-May 17, 2015 2:49:23 PM org.apache.solr.spelling.DirectSolrSpellChecker init
+May 17, 2015 3:17:09 PM org.apache.solr.handler.component.SpellCheckComponent inform
+INFO: Registering newSearcher listener for spellchecker: example
+May 17, 2015 3:17:09 PM org.apache.solr.spelling.DirectSolrSpellChecker init
 INFO: init: {name=example,field=title_text,buildOnCommit=true,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
-May 17, 2015 2:49:23 PM org.apache.solr.spelling.DirectSolrSpellChecker init
+May 17, 2015 3:17:09 PM org.apache.solr.handler.component.SpellCheckComponent inform
+INFO: Registering newSearcher listener for spellchecker: example
+May 17, 2015 3:17:09 PM org.apache.solr.spelling.DirectSolrSpellChecker init
 INFO: init: {name=example,field=title_text,buildOnCommit=true,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
-May 17, 2015 2:49:23 PM org.apache.solr.handler.component.SpellCheckComponent inform
+May 17, 2015 3:17:09 PM org.apache.solr.handler.component.SpellCheckComponent inform
 INFO: Registering newSearcher listener for spellchecker: example
-May 17, 2015 2:49:23 PM org.apache.solr.handler.component.SpellCheckComponent inform
-INFO: Registering newSearcher listener for spellchecker: example
-May 17, 2015 2:49:23 PM org.apache.solr.handler.component.SpellCheckComponent inform
-INFO: Registering newSearcher listener for spellchecker: example
-May 17, 2015 2:49:23 PM org.apache.solr.handler.component.SpellCheckComponent inform
+May 17, 2015 3:17:09 PM org.apache.solr.handler.component.SpellCheckComponent inform
 INFO: No queryConverter defined, using default converter
-May 17, 2015 2:49:23 PM org.apache.solr.handler.component.SpellCheckComponent inform
+May 17, 2015 3:17:09 PM org.apache.solr.handler.component.SpellCheckComponent inform
 INFO: No queryConverter defined, using default converter
-May 17, 2015 2:49:23 PM org.apache.solr.handler.component.SpellCheckComponent inform
+May 17, 2015 3:17:09 PM org.apache.solr.handler.component.SpellCheckComponent inform
 INFO: No queryConverter defined, using default converter
-May 17, 2015 2:49:23 PM org.apache.solr.handler.ReplicationHandler inform
+May 17, 2015 3:17:09 PM org.apache.solr.handler.ReplicationHandler inform
 INFO: Commits will be reserved for  10000
-May 17, 2015 2:49:23 PM org.apache.solr.handler.ReplicationHandler inform
+May 17, 2015 3:17:09 PM org.apache.solr.handler.ReplicationHandler inform
 INFO: Commits will be reserved for  10000
-May 17, 2015 2:49:23 PM org.apache.solr.handler.ReplicationHandler inform
+May 17, 2015 3:17:09 PM org.apache.solr.handler.ReplicationHandler inform
 INFO: Commits will be reserved for  10000
-May 17, 2015 2:49:23 PM org.apache.solr.core.SolrCore registerSearcher
-INFO: [test] Registered new searcher Searcher@362de08a main{StandardDirectoryReader(segments_1:1)}
-May 17, 2015 2:49:23 PM org.apache.solr.core.SolrCore registerSearcher
-INFO: [default] Registered new searcher Searcher@539a5002 main{StandardDirectoryReader(segments_3:7 _1(4.2):C1)}
-May 17, 2015 2:49:23 PM org.apache.solr.core.SolrCore registerSearcher
-INFO: [development] Registered new searcher Searcher@7df09fcf main{StandardDirectoryReader(segments_1:1)}
-May 17, 2015 2:49:23 PM org.apache.solr.core.CoreContainer registerCore
+May 17, 2015 3:17:09 PM org.apache.solr.core.SolrCore registerSearcher
+INFO: [test] Registered new searcher Searcher@576ddaaa main{StandardDirectoryReader(segments_1:1)}
+May 17, 2015 3:17:09 PM org.apache.solr.core.CoreContainer registerCore
 INFO: registering core: default
-May 17, 2015 2:49:23 PM org.apache.solr.core.CoreContainer registerCore
-INFO: registering core: development
-May 17, 2015 2:49:23 PM org.apache.solr.core.CoreContainer registerCore
+May 17, 2015 3:17:09 PM org.apache.solr.core.SolrCore registerSearcher
+INFO: [default] Registered new searcher Searcher@56f8d74c main{StandardDirectoryReader(segments_3:7 _1(4.2):C1)}
+May 17, 2015 3:17:09 PM org.apache.solr.core.CoreContainer registerCore
 INFO: registering core: test
-May 17, 2015 2:49:23 PM org.apache.solr.servlet.SolrDispatchFilter init
+May 17, 2015 3:17:09 PM org.apache.solr.core.CoreContainer registerCore
+INFO: registering core: development
+May 17, 2015 3:17:09 PM org.apache.solr.core.SolrCore registerSearcher
+INFO: [development] Registered new searcher Searcher@28fa85ea main{StandardDirectoryReader(segments_1:1)}
+May 17, 2015 3:17:09 PM org.apache.solr.servlet.SolrDispatchFilter init
 INFO: user.dir=/home/commander/.rvm/gems/ruby-2.2.1/gems/sunspot_solr-2.2.0/solr
-May 17, 2015 2:49:23 PM org.apache.solr.servlet.SolrDispatchFilter init
+May 17, 2015 3:17:09 PM org.apache.solr.servlet.SolrDispatchFilter init
 INFO: SolrDispatchFilter.init() done
-May 17, 2015 2:54:27 PM org.apache.solr.core.SolrCore execute
-INFO: [default] webapp=/solr path=/select params={indent=true&q=*:*&wt=xml} hits=1 status=0 QTime=22 
-May 17, 2015 2:54:30 PM org.apache.solr.core.SolrCore execute
+May 17, 2015 3:18:07 PM org.apache.solr.core.SolrDeletionPolicy onInit
+INFO: SolrDeletionPolicy.onInit: commits:num=1
+	commit{dir=NRTCachingDirectory(org.apache.lucene.store.MMapDirectory@/home/commander/sandbox/linkPad4/solr/development/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@578af32e; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_1,generation=1,filenames=[segments_1]
+May 17, 2015 3:18:07 PM org.apache.solr.core.SolrDeletionPolicy updateCommits
+INFO: newest commit = 1[segments_1]
+May 17, 2015 3:18:07 PM org.apache.solr.update.processor.LogUpdateProcessor finish
+INFO: [development] webapp=/solr path=/update params={wt=ruby} {add=[Link 1 (1501445790182146048)]} 0 60
+May 17, 2015 3:18:12 PM org.apache.solr.update.DirectUpdateHandler2 commit
+INFO: start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=true,prepareCommit=false}
+May 17, 2015 3:18:12 PM org.apache.solr.search.SolrIndexSearcher <init>
+INFO: Opening Searcher@50c52858 main
+May 17, 2015 3:18:12 PM org.apache.solr.update.DirectUpdateHandler2 commit
+INFO: end_commit_flush
+May 17, 2015 3:18:12 PM org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener buildSpellIndex
+INFO: Building spell index for spell checker: default
+May 17, 2015 3:18:12 PM org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener buildSpellIndex
+INFO: Building spell index for spell checker: example
+May 17, 2015 3:18:12 PM org.apache.solr.core.SolrCore registerSearcher
+INFO: [development] Registered new searcher Searcher@50c52858 main{StandardDirectoryReader(segments_1:3:nrt _0(4.2):C1)}
+May 17, 2015 3:18:16 PM org.apache.solr.core.SolrCore execute
+INFO: [default] webapp=/solr path=/select params={indent=true&q=*:*&wt=xml} hits=1 status=0 QTime=23 
+May 17, 2015 3:18:18 PM org.apache.solr.core.SolrCore execute
+INFO: [default] webapp=/solr path=/select params={indent=true&q=*:*&wt=xml} hits=1 status=0 QTime=1 
+May 17, 2015 3:18:19 PM org.apache.solr.core.SolrCore execute
 INFO: [default] webapp=/solr path=/select params={indent=true&q=*:*&wt=xml} hits=1 status=0 QTime=0 
-May 17, 2015 2:54:30 PM org.apache.solr.core.SolrCore execute
-INFO: [default] webapp=/solr path=/select params={indent=true&q=*:*&wt=xml} hits=1 status=0 QTime=1 
-May 17, 2015 2:54:31 PM org.apache.solr.core.SolrCore execute
+May 17, 2015 3:18:20 PM org.apache.solr.core.SolrCore execute
 INFO: [default] webapp=/solr path=/select params={indent=true&q=*:*&wt=xml} hits=1 status=0 QTime=0 
-May 17, 2015 2:54:31 PM org.apache.solr.core.SolrCore execute
-INFO: [default] webapp=/solr path=/select params={indent=true&q=*:*&wt=xml} hits=1 status=0 QTime=1 
-May 17, 2015 2:54:32 PM org.apache.solr.core.SolrCore execute
-INFO: [default] webapp=/solr path=/select params={indent=true&q=*:*&wt=xml} hits=1 status=0 QTime=1 
-May 17, 2015 2:54:33 PM org.apache.solr.core.SolrCore execute
+May 17, 2015 3:18:21 PM org.apache.solr.core.SolrCore execute
 INFO: [default] webapp=/solr path=/select params={indent=true&q=*:*&wt=xml} hits=1 status=0 QTime=0 
-May 17, 2015 2:54:33 PM org.apache.solr.core.SolrCore execute
+May 17, 2015 3:18:22 PM org.apache.solr.update.DirectUpdateHandler2 commit
+INFO: start commit{,optimize=false,openSearcher=false,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+May 17, 2015 3:18:23 PM org.apache.solr.core.SolrDeletionPolicy onCommit
+INFO: SolrDeletionPolicy.onCommit: commits:num=2
+	commit{dir=NRTCachingDirectory(org.apache.lucene.store.MMapDirectory@/home/commander/sandbox/linkPad4/solr/development/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@578af32e; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_1,generation=1,filenames=[segments_1]
+	commit{dir=NRTCachingDirectory(org.apache.lucene.store.MMapDirectory@/home/commander/sandbox/linkPad4/solr/development/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@578af32e; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_2,generation=2,filenames=[_0.fnm, _0_Lucene41_0.doc, _0_Lucene41_0.pos, _0.nvd, segments_2, _0.fdx, _0.si, _0.nvm, _0_Lucene41_0.tim, _0.fdt, _0_Lucene41_0.tip]
+May 17, 2015 3:18:23 PM org.apache.solr.core.SolrDeletionPolicy updateCommits
+INFO: newest commit = 2[_0.fnm, _0_Lucene41_0.doc, _0_Lucene41_0.pos, _0.nvd, segments_2, _0.fdx, _0.si, _0.nvm, _0_Lucene41_0.tim, _0.fdt, _0_Lucene41_0.tip]
+May 17, 2015 3:18:23 PM org.apache.solr.update.DirectUpdateHandler2 commit
+INFO: end_commit_flush
+May 17, 2015 3:18:24 PM org.apache.solr.core.SolrCore execute
 INFO: [default] webapp=/solr path=/select params={indent=true&q=*:*&wt=xml} hits=1 status=0 QTime=0 
-May 17, 2015 2:54:34 PM org.apache.solr.core.SolrCore execute
+May 17, 2015 3:18:25 PM org.apache.solr.core.SolrCore execute
 INFO: [default] webapp=/solr path=/select params={indent=true&q=*:*&wt=xml} hits=1 status=0 QTime=1 
-May 17, 2015 2:54:34 PM org.apache.solr.core.SolrCore execute
-INFO: [default] webapp=/solr path=/select params={indent=true&q=*:*&wt=xml} hits=1 status=0 QTime=1 
-May 17, 2015 2:54:34 PM org.apache.solr.core.SolrCore execute
-INFO: [default] webapp=/solr path=/select params={indent=true&q=*:*&wt=xml} hits=1 status=0 QTime=1 
-May 17, 2015 2:54:34 PM org.apache.solr.core.SolrCore execute
-INFO: [default] webapp=/solr path=/select params={indent=true&q=*:*&wt=xml} hits=1 status=0 QTime=1 
-May 17, 2015 2:54:36 PM org.apache.solr.core.SolrCore execute
+May 17, 2015 3:18:25 PM org.apache.solr.core.SolrCore execute
 INFO: [default] webapp=/solr path=/select params={indent=true&q=*:*&wt=xml} hits=1 status=0 QTime=0 
-May 17, 2015 2:54:41 PM org.apache.solr.core.SolrCore execute
-INFO: [default] webapp=/solr path=/select params={indent=true&q=*:*&wt=xml} hits=1 status=0 QTime=0 
-May 17, 2015 2:54:41 PM org.apache.solr.core.SolrCore execute
+May 17, 2015 3:18:26 PM org.apache.solr.core.SolrCore execute
 INFO: [default] webapp=/solr path=/select params={indent=true&q=*:*&wt=xml} hits=1 status=0 QTime=1 
-May 17, 2015 2:54:43 PM org.apache.solr.servlet.SolrDispatchFilter handleAdminRequest
-INFO: [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json} status=0 QTime=1 
-May 17, 2015 2:54:43 PM org.apache.solr.core.SolrCore execute
-INFO: [default] webapp=/solr path=/admin/system params={wt=json} status=0 QTime=23 
-May 17, 2015 2:54:45 PM org.apache.solr.core.SolrCore execute
+May 17, 2015 3:18:28 PM org.apache.solr.core.SolrCore execute
+INFO: [development] webapp=/solr path=/admin/file/ params={file=admin-extra.menu-top.html} status=404 QTime=1 
+May 17, 2015 3:18:28 PM org.apache.solr.core.SolrCore execute
+INFO: [development] webapp=/solr path=/admin/file/ params={file=admin-extra.menu-bottom.html} status=404 QTime=0 
+May 17, 2015 3:18:28 PM org.apache.solr.core.SolrCore execute
+INFO: [development] webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json} status=0 QTime=1 
+May 17, 2015 3:18:28 PM org.apache.solr.core.SolrCore execute
+INFO: [development] webapp=/solr path=/replication params={command=details&wt=json} status=0 QTime=2 
+May 17, 2015 3:18:28 PM org.apache.solr.core.SolrCore execute
+INFO: [development] webapp=/solr path=/admin/file/ params={file=admin-extra.html} status=0 QTime=1 
+May 17, 2015 3:18:28 PM org.apache.solr.core.SolrCore execute
+INFO: [development] webapp=/solr path=/admin/ping params={action=status&wt=json} status=503 QTime=1 
+May 17, 2015 3:18:30 PM org.apache.solr.core.SolrCore execute
+INFO: [development] webapp=/solr path=/select params={indent=true&q=*:*&wt=xml} hits=1 status=0 QTime=0 
+May 17, 2015 3:19:58 PM org.apache.solr.update.processor.LogUpdateProcessor finish
+INFO: [development] webapp=/solr path=/update params={wt=ruby} {add=[Link 2 (1501445906659016704)]} 0 6
+May 17, 2015 3:20:01 PM org.apache.solr.core.SolrCore execute
+INFO: [development] webapp=/solr path=/select params={indent=true&q=*:*&wt=xml} hits=1 status=0 QTime=1 
+May 17, 2015 3:20:03 PM org.apache.solr.core.SolrCore execute
+INFO: [development] webapp=/solr path=/select params={indent=true&q=*:*&wt=xml} hits=1 status=0 QTime=0 
+May 17, 2015 3:20:03 PM org.apache.solr.update.DirectUpdateHandler2 commit
+INFO: start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=true,prepareCommit=false}
+May 17, 2015 3:20:03 PM org.apache.solr.search.SolrIndexSearcher <init>
+INFO: Opening Searcher@831290a main
+May 17, 2015 3:20:03 PM org.apache.solr.update.DirectUpdateHandler2 commit
+INFO: end_commit_flush
+May 17, 2015 3:20:03 PM org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener buildSpellIndex
+INFO: Building spell index for spell checker: default
+May 17, 2015 3:20:03 PM org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener buildSpellIndex
+INFO: Building spell index for spell checker: example
+May 17, 2015 3:20:03 PM org.apache.solr.core.SolrCore registerSearcher
+INFO: [development] Registered new searcher Searcher@831290a main{StandardDirectoryReader(segments_2:5:nrt _0(4.2):C1 _1(4.2):C1)}
+May 17, 2015 3:20:04 PM org.apache.solr.core.SolrCore execute
+INFO: [development] webapp=/solr path=/select params={indent=true&q=*:*&wt=xml} hits=2 status=0 QTime=0 
+May 17, 2015 3:20:06 PM org.apache.solr.core.SolrCore execute
+INFO: [default] webapp=/solr path=/admin/file/ params={file=admin-extra.menu-top.html} status=404 QTime=0 
+May 17, 2015 3:20:06 PM org.apache.solr.core.SolrCore execute
+INFO: [default] webapp=/solr path=/admin/file/ params={file=admin-extra.menu-bottom.html} status=404 QTime=0 
+May 17, 2015 3:20:06 PM org.apache.solr.core.SolrCore execute
+INFO: [default] webapp=/solr path=/replication params={command=details&wt=json} status=0 QTime=2 
+May 17, 2015 3:20:06 PM org.apache.solr.core.SolrCore execute
+INFO: [default] webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json} status=0 QTime=2 
+May 17, 2015 3:20:06 PM org.apache.solr.core.SolrCore execute
+INFO: [default] webapp=/solr path=/admin/file/ params={file=admin-extra.html} status=0 QTime=0 
+May 17, 2015 3:20:06 PM org.apache.solr.core.SolrCore execute
+INFO: [default] webapp=/solr path=/admin/ping params={action=status&wt=json} status=503 QTime=0 
+May 17, 2015 3:20:08 PM org.apache.solr.core.SolrCore execute
+INFO: [default] webapp=/solr path=/admin/file params={file=schema.xml&contentType=text/xml;charset%3Dutf-8} status=0 QTime=0 
+May 17, 2015 3:20:09 PM org.apache.solr.core.SolrCore execute
 INFO: [default] webapp=/solr path=/select params={indent=true&q=*:*&wt=xml} hits=1 status=0 QTime=0 
+May 17, 2015 3:20:11 PM org.apache.solr.core.SolrCore execute
+INFO: [development] webapp=/solr path=/admin/file/ params={file=admin-extra.menu-top.html} status=404 QTime=0 
+May 17, 2015 3:20:11 PM org.apache.solr.core.SolrCore execute
+INFO: [development] webapp=/solr path=/admin/file/ params={file=admin-extra.menu-bottom.html} status=404 QTime=0 
+May 17, 2015 3:20:11 PM org.apache.solr.core.SolrCore execute
+INFO: [development] webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json} status=0 QTime=1 
+May 17, 2015 3:20:11 PM org.apache.solr.core.SolrCore execute
+INFO: [development] webapp=/solr path=/replication params={command=details&wt=json} status=0 QTime=3 
+May 17, 2015 3:20:11 PM org.apache.solr.core.SolrCore execute
+INFO: [development] webapp=/solr path=/admin/file/ params={file=admin-extra.html} status=0 QTime=0 
+May 17, 2015 3:20:11 PM org.apache.solr.core.SolrCore execute
+INFO: [development] webapp=/solr path=/admin/ping params={action=status&wt=json} status=503 QTime=0 
+May 17, 2015 3:20:13 PM org.apache.solr.update.DirectUpdateHandler2 commit
+INFO: start commit{,optimize=false,openSearcher=false,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+May 17, 2015 3:20:13 PM org.apache.solr.core.SolrCore execute
+INFO: [development] webapp=/solr path=/select params={indent=true&q=*:*&wt=xml} hits=2 status=0 QTime=1 
+May 17, 2015 3:20:14 PM org.apache.solr.core.SolrDeletionPolicy onCommit
+INFO: SolrDeletionPolicy.onCommit: commits:num=2
+	commit{dir=NRTCachingDirectory(org.apache.lucene.store.MMapDirectory@/home/commander/sandbox/linkPad4/solr/development/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@578af32e; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_2,generation=2,filenames=[_0.fnm, _0_Lucene41_0.doc, _0_Lucene41_0.pos, _0.nvd, segments_2, _0.fdx, _0.si, _0.nvm, _0_Lucene41_0.tim, _0.fdt, _0_Lucene41_0.tip]
+	commit{dir=NRTCachingDirectory(org.apache.lucene.store.MMapDirectory@/home/commander/sandbox/linkPad4/solr/development/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@578af32e; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_3,generation=3,filenames=[_1.nvm, _1_Lucene41_0.doc, _0.fnm, _0_Lucene41_0.pos, _1_Lucene41_0.tim, _1.nvd, _1_Lucene41_0.tip, _0.nvm, _1.fnm, _1.fdx, _1_Lucene41_0.pos, _1.fdt, _0_Lucene41_0.doc, _1.si, _0.nvd, _0.fdx, _0.si, _0_Lucene41_0.tim, segments_3, _0_Lucene41_0.tip, _0.fdt]
+May 17, 2015 3:20:14 PM org.apache.solr.core.SolrDeletionPolicy updateCommits
+INFO: newest commit = 3[_1.nvm, _1_Lucene41_0.doc, _0.fnm, _0_Lucene41_0.pos, _1_Lucene41_0.tim, _1.nvd, _1_Lucene41_0.tip, _0.nvm, _1.fnm, _1.fdx, _1_Lucene41_0.pos, _1.fdt, _0_Lucene41_0.doc, _1.si, _0.nvd, _0.fdx, _0.si, _0_Lucene41_0.tim, segments_3, _0_Lucene41_0.tip, _0.fdt]
+May 17, 2015 3:20:14 PM org.apache.solr.update.DirectUpdateHandler2 commit
+INFO: end_commit_flush
+May 17, 2015 3:22:55 PM org.apache.solr.update.processor.LogUpdateProcessor finish
+INFO: [development] webapp=/solr path=/update params={wt=ruby} {add=[Link 1 (1501446092426838016)]} 0 2
+May 17, 2015 3:22:56 PM org.apache.solr.update.DirectUpdateHandler2 commit
+INFO: start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+May 17, 2015 3:22:56 PM org.apache.solr.core.SolrDeletionPolicy onCommit
+INFO: SolrDeletionPolicy.onCommit: commits:num=2
+	commit{dir=NRTCachingDirectory(org.apache.lucene.store.MMapDirectory@/home/commander/sandbox/linkPad4/solr/development/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@578af32e; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_3,generation=3,filenames=[_1.nvm, _1_Lucene41_0.doc, _0.fnm, _0_Lucene41_0.pos, _1_Lucene41_0.tim, _1.nvd, _1_Lucene41_0.tip, _0.nvm, _1.fnm, _1.fdx, _1_Lucene41_0.pos, _1.fdt, _0_Lucene41_0.doc, _1.si, _0.nvd, _0.fdx, _0.si, _0_Lucene41_0.tim, segments_3, _0_Lucene41_0.tip, _0.fdt]
+	commit{dir=NRTCachingDirectory(org.apache.lucene.store.MMapDirectory@/home/commander/sandbox/linkPad4/solr/development/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@578af32e; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_4,generation=4,filenames=[_2.si, _2_Lucene41_0.pos, _1.nvm, _1_Lucene41_0.doc, _2_Lucene41_0.tim, _1_Lucene41_0.tim, _1.nvd, _2.fdt, _1_Lucene41_0.tip, _2_Lucene41_0.doc, _2_Lucene41_0.tip, _2.fdx, _1.fnm, _2.fnm, _1_Lucene41_0.pos, _1.fdx, _2.nvm, _1.fdt, _1.si, _2.nvd, segments_4]
+May 17, 2015 3:22:56 PM org.apache.solr.core.SolrDeletionPolicy updateCommits
+INFO: newest commit = 4[_2.si, _2_Lucene41_0.pos, _1.nvm, _1_Lucene41_0.doc, _2_Lucene41_0.tim, _1_Lucene41_0.tim, _1.nvd, _2.fdt, _1_Lucene41_0.tip, _2_Lucene41_0.doc, _2_Lucene41_0.tip, _2.fdx, _1.fnm, _2.fnm, _1_Lucene41_0.pos, _1.fdx, _2.nvm, _1.fdt, _1.si, _2.nvd, segments_4]
+May 17, 2015 3:22:56 PM org.apache.solr.search.SolrIndexSearcher <init>
+INFO: Opening Searcher@5146a4b2 main
+May 17, 2015 3:22:56 PM org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener buildSpellIndex
+INFO: Building spell index for spell checker: default
+May 17, 2015 3:22:56 PM org.apache.solr.update.DirectUpdateHandler2 commit
+INFO: end_commit_flush
+May 17, 2015 3:22:56 PM org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener buildSpellIndex
+INFO: Building spell index for spell checker: example
+May 17, 2015 3:22:56 PM org.apache.solr.core.SolrCore registerSearcher
+INFO: [development] Registered new searcher Searcher@5146a4b2 main{StandardDirectoryReader(segments_4:9:nrt _1(4.2):C1 _2(4.2):C1)}
+May 17, 2015 3:22:56 PM org.apache.solr.update.processor.LogUpdateProcessor finish
+INFO: [development] webapp=/solr path=/update params={wt=ruby} {commit=} 0 436
+May 17, 2015 3:25:05 PM org.apache.solr.update.processor.LogUpdateProcessor finish
+INFO: [development] webapp=/solr path=/update params={wt=ruby} {add=[Link 1 (1501446228391493632)]} 0 3
+May 17, 2015 3:25:05 PM org.apache.solr.update.DirectUpdateHandler2 commit
+INFO: start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+May 17, 2015 3:25:05 PM org.apache.solr.core.SolrDeletionPolicy onCommit
+INFO: SolrDeletionPolicy.onCommit: commits:num=2
+	commit{dir=NRTCachingDirectory(org.apache.lucene.store.MMapDirectory@/home/commander/sandbox/linkPad4/solr/development/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@578af32e; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_4,generation=4,filenames=[_2.si, _2_Lucene41_0.pos, _1.nvm, _1_Lucene41_0.doc, _2_Lucene41_0.tim, _1_Lucene41_0.tim, _1.nvd, _2.fdt, _1_Lucene41_0.tip, _2_Lucene41_0.doc, _2_Lucene41_0.tip, _2.fdx, _1.fnm, _2.fnm, _1_Lucene41_0.pos, _1.fdx, _2.nvm, _1.fdt, _1.si, _2.nvd, segments_4]
+	commit{dir=NRTCachingDirectory(org.apache.lucene.store.MMapDirectory@/home/commander/sandbox/linkPad4/solr/development/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@578af32e; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_5,generation=5,filenames=[_1.nvm, _1_Lucene41_0.doc, _1_Lucene41_0.tim, _1.nvd, _1_Lucene41_0.tip, _3.fdt, _3.fnm, _1.fnm, _3.fdx, _1_Lucene41_0.pos, _1.fdx, _3.nvd, _3_Lucene41_0.doc, _3_Lucene41_0.pos, _1.fdt, _3_Lucene41_0.tip, _1.si, _3.si, _3_Lucene41_0.tim, _3.nvm, segments_5]
+May 17, 2015 3:25:05 PM org.apache.solr.core.SolrDeletionPolicy updateCommits
+INFO: newest commit = 5[_1.nvm, _1_Lucene41_0.doc, _1_Lucene41_0.tim, _1.nvd, _1_Lucene41_0.tip, _3.fdt, _3.fnm, _1.fnm, _3.fdx, _1_Lucene41_0.pos, _1.fdx, _3.nvd, _3_Lucene41_0.doc, _3_Lucene41_0.pos, _1.fdt, _3_Lucene41_0.tip, _1.si, _3.si, _3_Lucene41_0.tim, _3.nvm, segments_5]
+May 17, 2015 3:25:05 PM org.apache.solr.search.SolrIndexSearcher <init>
+INFO: Opening Searcher@70703b1b main
+May 17, 2015 3:25:05 PM org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener buildSpellIndex
+INFO: Building spell index for spell checker: default
+May 17, 2015 3:25:05 PM org.apache.solr.update.DirectUpdateHandler2 commit
+INFO: end_commit_flush
+May 17, 2015 3:25:05 PM org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener buildSpellIndex
+INFO: Building spell index for spell checker: example
+May 17, 2015 3:25:05 PM org.apache.solr.core.SolrCore registerSearcher
+INFO: [development] Registered new searcher Searcher@70703b1b main{StandardDirectoryReader(segments_5:13:nrt _1(4.2):C1 _3(4.2):C1)}
+May 17, 2015 3:25:05 PM org.apache.solr.update.processor.LogUpdateProcessor finish
+INFO: [development] webapp=/solr path=/update params={wt=ruby} {commit=} 0 316

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyText
+  URL: MyString
+  html: MyText
+
+two:
+  title: MyText
+  URL: MyString
+  html: MyText

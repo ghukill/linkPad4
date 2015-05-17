@@ -21,3 +21,238 @@ Migrating to CreatePosts (20150517183521)
   [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 0]]
   [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 1]]
   [1m[36mSQL (109.9ms)[0m  [1mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 1]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateLinks (20150517191426)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "links" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" text, "URL" varchar, "html" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150517191426"]]
+  [1m[36m (128.5ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "links" ("title", "URL", "html", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Graham's Amazing Website"], ["URL", "http://grahamhukil.com"], ["html", "<p>Helllloooo World!</p>"], ["created_at", "2015-05-17 19:18:07.475597"], ["updated_at", "2015-05-17 19:18:07.475597"]]
+  [1m[36m (98.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "links" ("title", "URL", "html", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Wayne State Library"], ["URL", "http://library.wayne.edu"], ["html", "<p>A whole lot of goodness</p>"], ["created_at", "2015-05-17 19:19:58.648597"], ["updated_at", "2015-05-17 19:19:58.648597"]]
+  [1m[35m (124.1ms)[0m  commit transaction
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-17 15:22:22 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/commander/.rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/templates/rails/welcome/index.html.erb (1.1ms)
+Completed 200 OK in 12ms (Views: 4.7ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/links" for 127.0.0.1 at 2015-05-17 15:22:26 -0400
+Processing by LinksController#index as HTML
+  [1m[35mLink Load (0.2ms)[0m  SELECT "links".* FROM "links"
+  Rendered links/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 815ms (Views: 810.9ms | ActiveRecord: 0.4ms | Solr: 0.0ms)
+
+
+Started GET "/assets/scaffolds.self-3f604dfb801e9c592ace8885ccd3804afac84adc55bb48938d18918d28f78a7e.css?body=1" for 127.0.0.1 at 2015-05-17 15:22:27 -0400
+
+
+Started GET "/links/1/edit" for 127.0.0.1 at 2015-05-17 15:22:39 -0400
+Processing by LinksController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLink Load (0.2ms)[0m  [1mSELECT  "links".* FROM "links" WHERE "links"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered links/_form.html.erb (14.7ms)
+  Rendered links/edit.html.erb within layouts/application (18.7ms)
+Completed 200 OK in 53ms (Views: 43.4ms | ActiveRecord: 0.2ms | Solr: 0.0ms)
+
+
+Started PATCH "/links/1" for 127.0.0.1 at 2015-05-17 15:22:55 -0400
+Processing by LinksController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JXQCoxL7qZdzzTJTNgjKAYI9gK1oiUKlyJTRjN1Kd/o7u8kTDlaqBMxeLR7l3+KN0VbFoRmmgSPIQjJnl1qTYA==", "link"=>{"title"=>"Graham's Amazing Website", "URL"=>"http://grahamhukil.com", "html"=>"<p>Helllloooo World!</p>\r\n<p>This is plumb shit amazing.</p>"}, "commit"=>"Update Link", "id"=>"1"}
+  [1m[35mLink Load (0.1ms)[0m  SELECT  "links".* FROM "links" WHERE "links"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "links" SET "html" = ?, "updated_at" = ? WHERE "links"."id" = ?  [["html", "<p>Helllloooo World!</p>\r\n<p>This is plumb shit amazing.</p>"], ["updated_at", "2015-05-17 19:22:55.809509"], ["id", 1]]
+  [1m[32mSOLR Request (7.2ms)[0m  [ path=[1m[1mupdate[0m parameters={} ]
+  [1m[36m (195.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/links/1
+  [1m[32mSOLR Request (439.2ms)[0m  [ path=[1m[1mupdate[0m parameters={} ]
+Completed 302 Found in 649ms (ActiveRecord: 195.5ms)
+
+
+Started GET "/links/1" for 127.0.0.1 at 2015-05-17 15:22:56 -0400
+Processing by LinksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLink Load (0.1ms)[0m  SELECT  "links".* FROM "links" WHERE "links"."id" = ? LIMIT 1  [["id", 1]]
+Completed 400 Bad Request in 2ms (ActiveRecord: 0.1ms)
+
+ActionController::ParameterMissing (param is missing or the value is empty: link):
+  app/controllers/links_controller.rb:73:in `link_params'
+  app/controllers/links_controller.rb:13:in `show'
+
+
+  Rendered /home/commander/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /home/commander/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /home/commander/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/commander/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (23.0ms)
+  Rendered /home/commander/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /home/commander/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/commander/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/commander/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/commander/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (13.1ms)
+  Rendered /home/commander/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/commander/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/commander/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (29.8ms)
+
+
+Started GET "/links/1" for 127.0.0.1 at 2015-05-17 15:24:03 -0400
+Processing by LinksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLink Load (0.1ms)[0m  [1mSELECT  "links".* FROM "links" WHERE "links"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 400 Bad Request in 3ms (ActiveRecord: 0.1ms)
+
+ActionController::ParameterMissing (param is missing or the value is empty: link):
+  app/controllers/links_controller.rb:73:in `link_params'
+  app/controllers/links_controller.rb:13:in `show'
+
+
+  Rendered /home/commander/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.3ms)
+  Rendered /home/commander/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/commander/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/commander/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (17.4ms)
+  Rendered /home/commander/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /home/commander/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/commander/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/commander/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/commander/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (11.9ms)
+  Rendered /home/commander/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/commander/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/commander/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (24.2ms)
+
+
+Started GET "/links/" for 127.0.0.1 at 2015-05-17 15:24:06 -0400
+Processing by LinksController#index as HTML
+  [1m[35mLink Load (0.2ms)[0m  SELECT "links".* FROM "links"
+  Rendered links/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 26ms (Views: 25.1ms | ActiveRecord: 0.2ms | Solr: 0.0ms)
+
+
+Started GET "/links/1" for 127.0.0.1 at 2015-05-17 15:24:09 -0400
+Processing by LinksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLink Load (0.1ms)[0m  [1mSELECT  "links".* FROM "links" WHERE "links"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.1ms)
+
+ActionController::ParameterMissing (param is missing or the value is empty: link):
+  app/controllers/links_controller.rb:73:in `link_params'
+  app/controllers/links_controller.rb:13:in `show'
+
+
+  Rendered /home/commander/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.5ms)
+  Rendered /home/commander/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/commander/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/commander/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (17.7ms)
+  Rendered /home/commander/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /home/commander/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/commander/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/commander/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/commander/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (12.1ms)
+  Rendered /home/commander/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/commander/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/commander/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (24.5ms)
+
+
+Started GET "/links/1" for 127.0.0.1 at 2015-05-17 15:24:09 -0400
+Processing by LinksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLink Load (0.1ms)[0m  SELECT  "links".* FROM "links" WHERE "links"."id" = ? LIMIT 1  [["id", 1]]
+Completed 400 Bad Request in 2ms (ActiveRecord: 0.1ms)
+
+ActionController::ParameterMissing (param is missing or the value is empty: link):
+  app/controllers/links_controller.rb:73:in `link_params'
+  app/controllers/links_controller.rb:13:in `show'
+
+
+  Rendered /home/commander/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.6ms)
+  Rendered /home/commander/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /home/commander/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/commander/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (19.0ms)
+  Rendered /home/commander/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/commander/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/commander/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/commander/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/commander/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (12.6ms)
+  Rendered /home/commander/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/commander/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/commander/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (25.5ms)
+
+
+Started GET "/links/" for 127.0.0.1 at 2015-05-17 15:24:33 -0400
+Processing by LinksController#index as HTML
+  [1m[36mLink Load (0.3ms)[0m  [1mSELECT "links".* FROM "links"[0m
+  Rendered links/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 29ms (Views: 26.1ms | ActiveRecord: 0.5ms | Solr: 0.0ms)
+
+
+Started GET "/assets/links.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-17 15:24:33 -0400
+
+
+Started GET "/assets/scaffolds.self-3f604dfb801e9c592ace8885ccd3804afac84adc55bb48938d18918d28f78a7e.css?body=1" for 127.0.0.1 at 2015-05-17 15:24:33 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-05-17 15:24:33 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-05-17 15:24:33 -0400
+
+
+Started GET "/assets/links.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-17 15:24:33 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-05-17 15:24:33 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-05-17 15:24:33 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-05-17 15:24:33 -0400
+
+
+Started GET "/links/1" for 127.0.0.1 at 2015-05-17 15:24:34 -0400
+Processing by LinksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLink Load (0.2ms)[0m  SELECT  "links".* FROM "links" WHERE "links"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered links/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 26ms (Views: 23.5ms | ActiveRecord: 0.2ms | Solr: 0.0ms)
+
+
+Started GET "/links/1/edit" for 127.0.0.1 at 2015-05-17 15:24:50 -0400
+Processing by LinksController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLink Load (0.1ms)[0m  [1mSELECT  "links".* FROM "links" WHERE "links"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered links/_form.html.erb (2.9ms)
+  Rendered links/edit.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 29ms (Views: 27.7ms | ActiveRecord: 0.1ms | Solr: 0.0ms)
+
+
+Started PATCH "/links/1" for 127.0.0.1 at 2015-05-17 15:25:05 -0400
+Processing by LinksController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Tp7W/dbLXtD3WOmmXrxFCLz2y3/yIWtpr3XDvuQKsi9QUR1NymZdQ0jL9uuNa22E752Oc4MOqO+voyBVrhpWtQ==", "link"=>{"title"=>"Graham's Amazing Website", "URL"=>"http://grahamhukil.com", "html"=>"<p>Helllloooo World!</p>\r\n<p>Yep.  Rails, you kinda neat.</p>"}, "commit"=>"Update Link", "id"=>"1"}
+  [1m[35mLink Load (0.1ms)[0m  SELECT  "links".* FROM "links" WHERE "links"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "links" SET "html" = ?, "updated_at" = ? WHERE "links"."id" = ?  [["html", "<p>Helllloooo World!</p>\r\n<p>Yep.  Rails, you kinda neat.</p>"], ["updated_at", "2015-05-17 19:25:05.478596"], ["id", 1]]
+  [1m[32mSOLR Request (5.4ms)[0m  [ path=[1m[1mupdate[0m parameters={} ]
+  [1m[36m (165.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/links/1
+  [1m[32mSOLR Request (319.5ms)[0m  [ path=[1m[1mupdate[0m parameters={} ]
+Completed 302 Found in 495ms (ActiveRecord: 165.7ms)
+
+
+Started GET "/links/1" for 127.0.0.1 at 2015-05-17 15:25:05 -0400
+Processing by LinksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLink Load (0.1ms)[0m  SELECT  "links".* FROM "links" WHERE "links"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered links/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 27ms (Views: 25.8ms | ActiveRecord: 0.1ms | Solr: 324.9ms)
+
+
+Started GET "/links" for 127.0.0.1 at 2015-05-17 15:25:08 -0400
+Processing by LinksController#index as HTML
+  [1m[36mLink Load (0.2ms)[0m  [1mSELECT "links".* FROM "links"[0m
+  Rendered links/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 31ms (Views: 30.5ms | ActiveRecord: 0.2ms | Solr: 0.0ms)
