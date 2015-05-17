@@ -1,6 +1,15 @@
 <p id="notice"><%= notice %></p>
 
+
+
 <h1>Listing Links</h1>
+
+<!-- beginnings of search -->
+<%= form_tag search_links_path, :method => :get do %>
+  <p>
+    <%= text_field_tag :query, params[:query] %> <%= submit_tag "Search" %>
+  </p>
+<% end %>
 
 <table>
   <thead>

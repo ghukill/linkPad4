@@ -479,3 +479,93 @@ May 17, 2015 3:25:05 PM org.apache.solr.core.SolrCore registerSearcher
 INFO: [development] Registered new searcher Searcher@70703b1b main{StandardDirectoryReader(segments_5:13:nrt _1(4.2):C1 _3(4.2):C1)}
 May 17, 2015 3:25:05 PM org.apache.solr.update.processor.LogUpdateProcessor finish
 INFO: [development] webapp=/solr path=/update params={wt=ruby} {commit=} 0 316
+May 17, 2015 3:31:42 PM org.apache.solr.update.processor.LogUpdateProcessor finish
+INFO: [development] webapp=/solr path=/update params={wt=ruby} {add=[Link 1 (1501446644836597760)]} 0 3
+May 17, 2015 3:31:42 PM org.apache.solr.update.DirectUpdateHandler2 commit
+INFO: start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+May 17, 2015 3:31:43 PM org.apache.solr.core.SolrDeletionPolicy onCommit
+INFO: SolrDeletionPolicy.onCommit: commits:num=2
+	commit{dir=NRTCachingDirectory(org.apache.lucene.store.MMapDirectory@/home/commander/sandbox/linkPad4/solr/development/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@578af32e; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_5,generation=5,filenames=[_1.nvm, _1_Lucene41_0.doc, _1_Lucene41_0.tim, _1.nvd, _1_Lucene41_0.tip, _3.fdt, _3.fnm, _1.fnm, _3.fdx, _1_Lucene41_0.pos, _1.fdx, _3.nvd, _3_Lucene41_0.doc, _3_Lucene41_0.pos, _1.fdt, _3_Lucene41_0.tip, _1.si, _3.si, _3_Lucene41_0.tim, _3.nvm, segments_5]
+	commit{dir=NRTCachingDirectory(org.apache.lucene.store.MMapDirectory@/home/commander/sandbox/linkPad4/solr/development/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@578af32e; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_6,generation=6,filenames=[_1.nvm, _1_Lucene41_0.doc, _4_Lucene41_0.doc, _1_Lucene41_0.tim, _1.nvd, _4.fnm, _1_Lucene41_0.tip, _4.si, _4.fdt, _4_Lucene41_0.tip, _1.fnm, _4_Lucene41_0.tim, _4.fdx, _1_Lucene41_0.pos, _1.fdx, _4.nvd, _1.fdt, _1.si, _4_Lucene41_0.pos, _4.nvm, segments_6]
+May 17, 2015 3:31:43 PM org.apache.solr.core.SolrDeletionPolicy updateCommits
+INFO: newest commit = 6[_1.nvm, _1_Lucene41_0.doc, _4_Lucene41_0.doc, _1_Lucene41_0.tim, _1.nvd, _4.fnm, _1_Lucene41_0.tip, _4.si, _4.fdt, _4_Lucene41_0.tip, _1.fnm, _4_Lucene41_0.tim, _4.fdx, _1_Lucene41_0.pos, _1.fdx, _4.nvd, _1.fdt, _1.si, _4_Lucene41_0.pos, _4.nvm, segments_6]
+May 17, 2015 3:31:43 PM org.apache.solr.search.SolrIndexSearcher <init>
+INFO: Opening Searcher@25bf5ccf main
+May 17, 2015 3:31:43 PM org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener buildSpellIndex
+INFO: Building spell index for spell checker: default
+May 17, 2015 3:31:43 PM org.apache.solr.update.DirectUpdateHandler2 commit
+INFO: end_commit_flush
+May 17, 2015 3:31:43 PM org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener buildSpellIndex
+INFO: Building spell index for spell checker: example
+May 17, 2015 3:31:43 PM org.apache.solr.core.SolrCore registerSearcher
+INFO: [development] Registered new searcher Searcher@25bf5ccf main{StandardDirectoryReader(segments_6:17:nrt _1(4.2):C1 _4(4.2):C1)}
+May 17, 2015 3:31:43 PM org.apache.solr.update.processor.LogUpdateProcessor finish
+INFO: [development] webapp=/solr path=/update params={wt=ruby} {commit=} 0 346
+May 17, 2015 3:38:53 PM org.apache.solr.core.SolrCore execute
+INFO: [development] webapp=/solr path=/select params={fl=*+score&start=0&q=wayne&qf=title_texts+html_texts&wt=ruby&fq=type:Link&rows=30&defType=edismax} hits=1 status=0 QTime=17 
+May 17, 2015 3:50:24 PM org.apache.solr.core.SolrCore execute
+INFO: [development] webapp=/solr path=/select params={fl=*+score&start=0&q=wayne&qf=title_texts+html_texts&wt=ruby&fq=type:Link&rows=30&defType=edismax} hits=1 status=0 QTime=2 
+May 17, 2015 3:50:30 PM org.apache.solr.core.SolrCore execute
+INFO: [development] webapp=/solr path=/select params={fl=*+score&start=0&q=graham&qf=title_texts+html_texts&wt=ruby&fq=type:Link&rows=30&defType=edismax} hits=0 status=0 QTime=2 
+May 17, 2015 3:50:32 PM org.apache.solr.core.SolrCore execute
+INFO: [development] webapp=/solr path=/select params={fl=*+score&start=0&q=Graham&qf=title_texts+html_texts&wt=ruby&fq=type:Link&rows=30&defType=edismax} hits=0 status=0 QTime=1 
+May 17, 2015 3:50:35 PM org.apache.solr.core.SolrCore execute
+INFO: [development] webapp=/solr path=/select params={fl=*+score&start=0&q=website&qf=title_texts+html_texts&wt=ruby&fq=type:Link&rows=30&defType=edismax} hits=1 status=0 QTime=2 
+May 17, 2015 3:50:37 PM org.apache.solr.core.SolrCore execute
+INFO: [development] webapp=/solr path=/select params={fl=*+score&start=0&q=Graham's&qf=title_texts+html_texts&wt=ruby&fq=type:Link&rows=30&defType=edismax} hits=1 status=0 QTime=3 
+May 17, 2015 3:50:42 PM org.apache.solr.core.SolrCore execute
+INFO: [development] webapp=/solr path=/select params={fl=*+score&start=0&q=Rails&qf=title_texts+html_texts&wt=ruby&fq=type:Link&rows=30&defType=edismax} hits=1 status=0 QTime=2 
+May 17, 2015 3:50:45 PM org.apache.solr.core.SolrCore execute
+INFO: [development] webapp=/solr path=/select params={fl=*+score&start=0&q=<p>&qf=title_texts+html_texts&wt=ruby&fq=type:Link&rows=30&defType=edismax} hits=2 status=0 QTime=3 
+May 17, 2015 3:50:47 PM org.apache.solr.core.SolrCore execute
+INFO: [development] webapp=/solr path=/select params={fl=*+score&start=0&q=<p>&qf=title_texts+html_texts&wt=ruby&fq=type:Link&rows=30&defType=edismax} hits=2 status=0 QTime=1 
+May 17, 2015 3:52:14 PM org.apache.solr.core.SolrCore execute
+INFO: [development] webapp=/solr path=/select params={fl=*+score&start=0&q=<p>&qf=title_texts+html_texts&wt=ruby&fq=type:Link&rows=30&defType=edismax} hits=2 status=0 QTime=2 
+May 17, 2015 3:52:17 PM org.apache.solr.core.SolrCore execute
+INFO: [development] webapp=/solr path=/select params={start=0&q=*:*&wt=ruby&fq=type:Link&rows=30} hits=2 status=0 QTime=2 
+May 17, 2015 3:52:50 PM org.apache.solr.update.processor.LogUpdateProcessor finish
+INFO: [development] webapp=/solr path=/update params={wt=ruby} {add=[Link 3 (1501447974519046144)]} 0 203
+May 17, 2015 3:52:51 PM org.apache.solr.update.DirectUpdateHandler2 commit
+INFO: start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+May 17, 2015 3:52:51 PM org.apache.solr.core.SolrDeletionPolicy onCommit
+INFO: SolrDeletionPolicy.onCommit: commits:num=2
+	commit{dir=NRTCachingDirectory(org.apache.lucene.store.MMapDirectory@/home/commander/sandbox/linkPad4/solr/development/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@578af32e; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_6,generation=6,filenames=[_1.nvm, _1_Lucene41_0.doc, _4_Lucene41_0.doc, _1_Lucene41_0.tim, _1.nvd, _4.fnm, _1_Lucene41_0.tip, _4.si, _4.fdt, _4_Lucene41_0.tip, _1.fnm, _4_Lucene41_0.tim, _4.fdx, _1_Lucene41_0.pos, _1.fdx, _4.nvd, _1.fdt, _1.si, _4_Lucene41_0.pos, _4.nvm, segments_6]
+	commit{dir=NRTCachingDirectory(org.apache.lucene.store.MMapDirectory@/home/commander/sandbox/linkPad4/solr/development/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@578af32e; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_7,generation=7,filenames=[_5.fdt, _1_Lucene41_0.doc, _5_Lucene41_0.tim, _4_Lucene41_0.doc, _5_Lucene41_0.pos, _5_Lucene41_0.tip, _4.fnm, _1.fnm, _4.fdx, _5.nvm, _5_Lucene41_0.doc, _4_Lucene41_0.pos, _5.nvd, _1.nvm, _5.fnm, _1_Lucene41_0.tim, _1.nvd, _1_Lucene41_0.tip, _4.fdt, _4.si, _4_Lucene41_0.tip, _4_Lucene41_0.tim, _5.si, _1.fdx, _1_Lucene41_0.pos, segments_7, _4.nvd, _1.fdt, _1.si, _5.fdx, _4.nvm]
+May 17, 2015 3:52:51 PM org.apache.solr.core.SolrDeletionPolicy updateCommits
+INFO: newest commit = 7[_5.fdt, _1_Lucene41_0.doc, _5_Lucene41_0.tim, _4_Lucene41_0.doc, _5_Lucene41_0.pos, _5_Lucene41_0.tip, _4.fnm, _1.fnm, _4.fdx, _5.nvm, _5_Lucene41_0.doc, _4_Lucene41_0.pos, _5.nvd, _1.nvm, _5.fnm, _1_Lucene41_0.tim, _1.nvd, _1_Lucene41_0.tip, _4.fdt, _4.si, _4_Lucene41_0.tip, _4_Lucene41_0.tim, _5.si, _1.fdx, _1_Lucene41_0.pos, segments_7, _4.nvd, _1.fdt, _1.si, _5.fdx, _4.nvm]
+May 17, 2015 3:52:51 PM org.apache.solr.search.SolrIndexSearcher <init>
+INFO: Opening Searcher@253d604d main
+May 17, 2015 3:52:51 PM org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener buildSpellIndex
+INFO: Building spell index for spell checker: default
+May 17, 2015 3:52:51 PM org.apache.solr.update.DirectUpdateHandler2 commit
+INFO: end_commit_flush
+May 17, 2015 3:52:51 PM org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener buildSpellIndex
+INFO: Building spell index for spell checker: example
+May 17, 2015 3:52:51 PM org.apache.solr.core.SolrCore registerSearcher
+INFO: [development] Registered new searcher Searcher@253d604d main{StandardDirectoryReader(segments_7:19:nrt _1(4.2):C1 _4(4.2):C1 _5(4.2):C1)}
+May 17, 2015 3:52:51 PM org.apache.solr.update.processor.LogUpdateProcessor finish
+INFO: [development] webapp=/solr path=/update params={wt=ruby} {commit=} 0 466
+May 17, 2015 3:53:16 PM org.apache.solr.core.SolrCore execute
+INFO: [development] webapp=/solr path=/select params={fl=*+score&start=0&q=solr&qf=title_texts+html_texts&wt=ruby&fq=type:Link&rows=30&defType=edismax} hits=1 status=0 QTime=2 
+May 17, 2015 3:53:29 PM org.apache.solr.update.processor.LogUpdateProcessor finish
+INFO: [development] webapp=/solr path=/update params={wt=ruby} {delete=[Link 3 (-1501448015506833408)]} 0 1
+May 17, 2015 3:53:29 PM org.apache.solr.update.DirectUpdateHandler2 commit
+INFO: start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+May 17, 2015 3:53:30 PM org.apache.solr.core.SolrDeletionPolicy onCommit
+INFO: SolrDeletionPolicy.onCommit: commits:num=2
+	commit{dir=NRTCachingDirectory(org.apache.lucene.store.MMapDirectory@/home/commander/sandbox/linkPad4/solr/development/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@578af32e; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_7,generation=7,filenames=[_5.fdt, _1_Lucene41_0.doc, _5_Lucene41_0.tim, _4_Lucene41_0.doc, _5_Lucene41_0.pos, _5_Lucene41_0.tip, _4.fnm, _1.fnm, _4.fdx, _5.nvm, _5_Lucene41_0.doc, _4_Lucene41_0.pos, _5.nvd, _1.nvm, _5.fnm, _1_Lucene41_0.tim, _1.nvd, _1_Lucene41_0.tip, _4.fdt, _4.si, _4_Lucene41_0.tip, _4_Lucene41_0.tim, _5.si, _1.fdx, _1_Lucene41_0.pos, segments_7, _4.nvd, _1.fdt, _1.si, _5.fdx, _4.nvm]
+	commit{dir=NRTCachingDirectory(org.apache.lucene.store.MMapDirectory@/home/commander/sandbox/linkPad4/solr/development/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@578af32e; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_8,generation=8,filenames=[_1.nvm, _1_Lucene41_0.doc, _4_Lucene41_0.doc, _1_Lucene41_0.tim, _1.nvd, _4.fnm, _1_Lucene41_0.tip, _4.si, _4.fdt, _4_Lucene41_0.tip, _1.fnm, _4_Lucene41_0.tim, _4.fdx, _1_Lucene41_0.pos, _1.fdx, _4.nvd, segments_8, _1.fdt, _1.si, _4_Lucene41_0.pos, _4.nvm]
+May 17, 2015 3:53:30 PM org.apache.solr.core.SolrDeletionPolicy updateCommits
+INFO: newest commit = 8[_1.nvm, _1_Lucene41_0.doc, _4_Lucene41_0.doc, _1_Lucene41_0.tim, _1.nvd, _4.fnm, _1_Lucene41_0.tip, _4.si, _4.fdt, _4_Lucene41_0.tip, _1.fnm, _4_Lucene41_0.tim, _4.fdx, _1_Lucene41_0.pos, _1.fdx, _4.nvd, segments_8, _1.fdt, _1.si, _4_Lucene41_0.pos, _4.nvm]
+May 17, 2015 3:53:30 PM org.apache.solr.search.SolrIndexSearcher <init>
+INFO: Opening Searcher@51f6292b main
+May 17, 2015 3:53:30 PM org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener buildSpellIndex
+INFO: Building spell index for spell checker: default
+May 17, 2015 3:53:30 PM org.apache.solr.update.DirectUpdateHandler2 commit
+INFO: end_commit_flush
+May 17, 2015 3:53:30 PM org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener buildSpellIndex
+INFO: Building spell index for spell checker: example
+May 17, 2015 3:53:30 PM org.apache.solr.core.SolrCore registerSearcher
+INFO: [development] Registered new searcher Searcher@51f6292b main{StandardDirectoryReader(segments_8:21:nrt _1(4.2):C1 _4(4.2):C1)}
+May 17, 2015 3:53:30 PM org.apache.solr.update.processor.LogUpdateProcessor finish
+INFO: [development] webapp=/solr path=/update params={wt=ruby} {commit=} 0 101

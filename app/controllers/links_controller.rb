@@ -10,7 +10,6 @@ class LinksController < ApplicationController
   # GET /links/1
   # GET /links/1.json
   def show
-    # @link = Link.find(link_params)
   end
 
   # GET /links/new
@@ -62,6 +61,19 @@ class LinksController < ApplicationController
     end
   end
 
+  # GET /books/search
+  # GET /books/search.json
+  def search
+    @links = Link.search do
+      keywords params[:query]
+    end.results
+
+    respond_to do |format|
+      format.html { render :action => "index" }
+      format.json { render :json => @links }
+    end
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_link
@@ -70,6 +82,6 @@ class LinksController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def link_params
-      params.require(:link).permit(:title, :URL, :html)
+      params.require(:link).permit(:title, :URL, :html, :query)
     end
 end
