@@ -881,3 +881,99 @@ Processing by LinksController#index as HTML
   [1m[36mLink Load (0.2ms)[0m  [1mSELECT "links".* FROM "links"[0m
   Rendered links/index.html.erb within layouts/application (1.7ms)
 Completed 200 OK in 24ms (Views: 22.9ms | ActiveRecord: 0.2ms | Solr: 109.3ms)
+
+
+Started GET "/links" for 127.0.0.1 at 2015-05-17 23:43:39 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by LinksController#index as HTML
+  [1m[35mLink Load (0.3ms)[0m  SELECT "links".* FROM "links"
+  Rendered links/index.html.erb within layouts/application (38.4ms)
+Completed 200 OK in 1554ms (Views: 1514.3ms | ActiveRecord: 1.0ms | Solr: 0.0ms)
+
+
+Started GET "/assets/links.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-17 23:43:41 -0400
+
+
+Started GET "/assets/scaffolds.self-3f604dfb801e9c592ace8885ccd3804afac84adc55bb48938d18918d28f78a7e.css?body=1" for 127.0.0.1 at 2015-05-17 23:43:41 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-05-17 23:43:41 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-05-17 23:43:41 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-05-17 23:43:41 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-05-17 23:43:41 -0400
+
+
+Started GET "/assets/links.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-17 23:43:41 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-05-17 23:43:41 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-17 23:44:03 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/commander/.rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/templates/rails/welcome/index.html.erb (1.2ms)
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/links" for 127.0.0.1 at 2015-05-17 23:44:08 -0400
+Processing by LinksController#index as HTML
+  [1m[36mLink Load (0.4ms)[0m  [1mSELECT "links".* FROM "links"[0m
+  Rendered links/index.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 94ms (Views: 90.7ms | ActiveRecord: 0.4ms | Solr: 0.0ms)
+
+
+Started GET "/links/new" for 127.0.0.1 at 2015-05-17 23:44:11 -0400
+Processing by LinksController#new as HTML
+  Rendered links/_form.html.erb (82.9ms)
+  Rendered links/new.html.erb within layouts/application (104.4ms)
+Completed 200 OK in 166ms (Views: 164.3ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started POST "/links" for 127.0.0.1 at 2015-05-17 23:44:24 -0400
+Processing by LinksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3kh1c2SWantKOK9iYMOoL6AFJ4dHPcTltClJMy+TgU83rWaOex8oIRoQTIf/6hPQ+9Dfzh8bsyTjUubf8/s0Jg==", "link"=>{"title"=>"Could this be?", "URL"=>"http://canitbe.com", "html"=>"Will it blend!?"}, "commit"=>"Create Link"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (157.6ms)[0m  [1mINSERT INTO "links" ("title", "URL", "html", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Could this be?"], ["URL", "http://canitbe.com"], ["html", "Will it blend!?"], ["created_at", "2015-05-18 03:44:24.952030"], ["updated_at", "2015-05-18 03:44:24.952030"]]
+  [1m[32mSOLR Request (277.9ms)[0m  [ path=[1m[1mupdate[0m parameters={} ]
+  [1m[35m (121.3ms)[0m  commit transaction
+Redirected to http://localhost:3000/links/4
+  [1m[32mSOLR Request (577.7ms)[0m  [ path=[1m[1mupdate[0m parameters={} ]
+Completed 302 Found in 1270ms (ActiveRecord: 279.1ms)
+
+
+Started GET "/links/4" for 127.0.0.1 at 2015-05-17 23:44:26 -0400
+Processing by LinksController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mLink Load (0.4ms)[0m  [1mSELECT  "links".* FROM "links" WHERE "links"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered links/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 100ms (Views: 69.7ms | ActiveRecord: 0.4ms | Solr: 855.6ms)
+
+
+Started GET "/links" for 127.0.0.1 at 2015-05-17 23:44:30 -0400
+Processing by LinksController#index as HTML
+  [1m[35mLink Load (2.2ms)[0m  SELECT "links".* FROM "links"
+  Rendered links/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 74ms (Views: 70.7ms | ActiveRecord: 2.2ms | Solr: 0.0ms)
+
+
+Started GET "/links/search?utf8=%E2%9C%93&query=this&commit=Search" for 127.0.0.1 at 2015-05-17 23:44:33 -0400
+Processing by LinksController#search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"this", "commit"=>"Search"}
+  [1m[32mSOLR Request (98.3ms)[0m  [ path=[1m[1mselect[0m parameters={fq: [1m[1m["type:Link"][0m, q: [1m[1m"this"[0m, fl: [1m[1m"* score"[0m, qf: [1m[1m"title_texts html_texts"[0m, defType: [1m[1m"edismax"[0m, start: [1m[1m0[0m, rows: [1m[1m30[0m} ]
+  [1m[36mLink Load (0.3ms)[0m  [1mSELECT "links".* FROM "links" WHERE "links"."id" = 4[0m
+  Rendered links/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 172ms (Views: 65.7ms | ActiveRecord: 0.3ms | Solr: 98.3ms)
+
+
+Started GET "/links/4" for 127.0.0.1 at 2015-05-17 23:44:38 -0400
+Processing by LinksController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mLink Load (0.3ms)[0m  SELECT  "links".* FROM "links" WHERE "links"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered links/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 94ms (Views: 92.1ms | ActiveRecord: 0.3ms | Solr: 0.0ms)
