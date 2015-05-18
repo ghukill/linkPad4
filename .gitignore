@@ -36,5 +36,6 @@ bower.json
 .powenv
 
 # Ignore Solr database
-/solr
-solr/*
+solr/default/data
+solr/development/data
+solr/data
