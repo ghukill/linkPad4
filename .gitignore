@@ -39,3 +39,6 @@ bower.json
 solr/default/data
 solr/development/data
 solr/data
+
+# Ignore thumbnails from vanilla PaperClip gem
+public/system/links/screenshots

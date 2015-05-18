@@ -1,4 +1,4 @@
-<%= form_for(@link) do |f| %>
+<%= form_for @link do |f| %>
   <% if @link.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@link.errors.count, "error") %> prohibited this link from being saved:</h2>
@@ -23,9 +23,10 @@
     <%= f.label :html %><br>
     <%= f.text_area :html %>
   </div>
-  <%= form_for @link, :url => links_path, :html => { :multipart => true } do |form| %>
-    <%= form.file_field :screenshot %>
-  <% end %>
+  <div class="field">
+    <%= f.file_field :screenshot %>
+  </div>
+
   <div class="actions">
     <%= f.submit %>
   </div>

@@ -15,8 +15,9 @@
   <%= @link.html %>
 </p>
 
-<%= image_tag @link.screenshot.url %>
-<%= image_tag @link.screenshot.url(:thumb) %>
+<p>
+	<%= image_tag @link.screenshot.url(:thumb) %>
+</p>
 
 <%= link_to 'Edit', edit_link_path(@link) %> |
 <%= link_to 'Back', links_path %>
