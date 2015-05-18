@@ -1,7 +1,11 @@
 source 'https://rubygems.org'
 
+# solr
 gem 'sunspot_rails'
 gem 'sunspot_solr'
+
+# moneta
+gem "paperclip", "~> 4.2"
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

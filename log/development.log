@@ -881,3 +881,322 @@ Processing by LinksController#index as HTML
   [1m[36mLink Load (0.2ms)[0m  [1mSELECT "links".* FROM "links"[0m
   Rendered links/index.html.erb within layouts/application (1.7ms)
 Completed 200 OK in 24ms (Views: 22.9ms | ActiveRecord: 0.2ms | Solr: 109.3ms)
+
+
+Started GET "/links" for 68.42.117.7 at 2015-05-17 15:54:57 -0400
+Cannot render console from 68.42.117.7! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by LinksController#index as HTML
+  [1m[35mLink Load (0.1ms)[0m  SELECT "links".* FROM "links"
+  Rendered links/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 144ms (Views: 135.3ms | ActiveRecord: 0.4ms | Solr: 0.0ms)
+
+
+Started GET "/assets/links.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 68.42.117.7 at 2015-05-17 15:54:57 -0400
+Cannot render console from 68.42.117.7! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-3f604dfb801e9c592ace8885ccd3804afac84adc55bb48938d18918d28f78a7e.css?body=1" for 68.42.117.7 at 2015-05-17 15:54:57 -0400
+Cannot render console from 68.42.117.7! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 68.42.117.7 at 2015-05-17 15:54:57 -0400
+Cannot render console from 68.42.117.7! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 68.42.117.7 at 2015-05-17 15:54:57 -0400
+Cannot render console from 68.42.117.7! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 68.42.117.7 at 2015-05-17 15:54:57 -0400
+Cannot render console from 68.42.117.7! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 68.42.117.7 at 2015-05-17 15:54:57 -0400
+Cannot render console from 68.42.117.7! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/links.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 68.42.117.7 at 2015-05-17 15:54:57 -0400
+Cannot render console from 68.42.117.7! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 68.42.117.7 at 2015-05-17 15:54:57 -0400
+Cannot render console from 68.42.117.7! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/links/search?utf8=%E2%9C%93&query=awesome&commit=Search" for 68.42.117.7 at 2015-05-17 15:55:00 -0400
+Cannot render console from 68.42.117.7! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LinksController#search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"awesome", "commit"=>"Search"}
+  [1m[32mSOLR Request (103.3ms)[0m  [ path=[1m[1mselect[0m parameters={fq: [1m[1m["type:Link"][0m, q: [1m[1m"awesome"[0m, fl: [1m[1m"* score"[0m, qf: [1m[1m"title_texts html_texts"[0m, defType: [1m[1m"edismax"[0m, start: [1m[1m0[0m, rows: [1m[1m30[0m} ]
+  Rendered links/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 126ms (Views: 21.4ms | ActiveRecord: 0.0ms | Solr: 103.3ms)
+
+
+Started GET "/links/search?utf8=%E2%9C%93&query=&commit=Search" for 68.42.117.7 at 2015-05-17 15:55:02 -0400
+Cannot render console from 68.42.117.7! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LinksController#search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"", "commit"=>"Search"}
+  [1m[32mSOLR Request (12.4ms)[0m  [ path=[1m[1mselect[0m parameters={fq: [1m[1m["type:Link"][0m, start: [1m[1m0[0m, rows: [1m[1m30[0m, q: [1m[1m"*:*"[0m} ]
+  [1m[36mLink Load (0.2ms)[0m  [1mSELECT "links".* FROM "links" WHERE "links"."id" IN (2, 1)[0m
+  Rendered links/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 45ms (Views: 23.5ms | ActiveRecord: 0.2ms | Solr: 12.4ms)
+
+
+Started GET "/links/search?utf8=%E2%9C%93&query=amazing&commit=Search" for 68.42.117.7 at 2015-05-17 15:55:06 -0400
+Cannot render console from 68.42.117.7! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LinksController#search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"amazing", "commit"=>"Search"}
+  [1m[32mSOLR Request (9.0ms)[0m  [ path=[1m[1mselect[0m parameters={fq: [1m[1m["type:Link"][0m, q: [1m[1m"amazing"[0m, fl: [1m[1m"* score"[0m, qf: [1m[1m"title_texts html_texts"[0m, defType: [1m[1m"edismax"[0m, start: [1m[1m0[0m, rows: [1m[1m30[0m} ]
+  [1m[35mLink Load (0.2ms)[0m  SELECT "links".* FROM "links" WHERE "links"."id" = 1
+  Rendered links/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 35ms (Views: 23.2ms | ActiveRecord: 0.2ms | Solr: 9.0ms)
+
+
+Started GET "/links/search?utf8=%E2%9C%93&query=&commit=Search" for 68.42.117.7 at 2015-05-17 15:55:11 -0400
+Cannot render console from 68.42.117.7! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LinksController#search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"", "commit"=>"Search"}
+  [1m[32mSOLR Request (6.9ms)[0m  [ path=[1m[1mselect[0m parameters={fq: [1m[1m["type:Link"][0m, start: [1m[1m0[0m, rows: [1m[1m30[0m, q: [1m[1m"*:*"[0m} ]
+  [1m[36mLink Load (0.2ms)[0m  [1mSELECT "links".* FROM "links" WHERE "links"."id" IN (2, 1)[0m
+  Rendered links/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 35ms (Views: 24.8ms | ActiveRecord: 0.2ms | Solr: 6.9ms)
+
+
+Started GET "/" for 68.60.120.118 at 2015-05-17 16:23:31 -0400
+Cannot render console from 68.60.120.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/commander/.rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/templates/rails/welcome/index.html.erb (0.7ms)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/links" for 68.60.120.118 at 2015-05-17 16:23:36 -0400
+Cannot render console from 68.60.120.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LinksController#index as HTML
+  [1m[35mLink Load (0.2ms)[0m  SELECT "links".* FROM "links"
+  Rendered links/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 28ms (Views: 26.5ms | ActiveRecord: 0.2ms | Solr: 0.0ms)
+
+
+Started GET "/assets/links.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 68.60.120.118 at 2015-05-17 16:23:36 -0400
+Cannot render console from 68.60.120.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 68.60.120.118 at 2015-05-17 16:23:36 -0400
+Cannot render console from 68.60.120.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 68.60.120.118 at 2015-05-17 16:23:36 -0400
+Cannot render console from 68.60.120.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 68.60.120.118 at 2015-05-17 16:23:36 -0400
+Cannot render console from 68.60.120.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-3f604dfb801e9c592ace8885ccd3804afac84adc55bb48938d18918d28f78a7e.css?body=1" for 68.60.120.118 at 2015-05-17 16:23:36 -0400
+Cannot render console from 68.60.120.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 68.60.120.118 at 2015-05-17 16:23:36 -0400
+Cannot render console from 68.60.120.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/links.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 68.60.120.118 at 2015-05-17 16:23:36 -0400
+Cannot render console from 68.60.120.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 68.60.120.118 at 2015-05-17 16:23:37 -0400
+Cannot render console from 68.60.120.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/links/1" for 68.60.120.118 at 2015-05-17 16:23:41 -0400
+Cannot render console from 68.60.120.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LinksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLink Load (0.3ms)[0m  [1mSELECT  "links".* FROM "links" WHERE "links"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered links/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 29ms (Views: 26.7ms | ActiveRecord: 0.3ms | Solr: 0.0ms)
+
+
+Started GET "/links/1.json" for 68.60.120.118 at 2015-05-17 16:23:48 -0400
+Cannot render console from 68.60.120.118! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LinksController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mLink Load (0.1ms)[0m  SELECT  "links".* FROM "links" WHERE "links"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered links/show.json.jbuilder (1.8ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.1ms | Solr: 0.0ms)
+
+
+Started GET "/" for 66.102.6.157 at 2015-05-17 23:45:43 -0400
+Cannot render console from 66.102.6.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/commander/.rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/" for 141.217.54.97 at 2015-05-18 08:50:04 -0400
+Cannot render console from 141.217.54.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/commander/.rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/templates/rails/welcome/index.html.erb (0.0ms)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started GET "/links" for 141.217.54.97 at 2015-05-18 08:50:05 -0400
+Cannot render console from 141.217.54.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LinksController#index as HTML
+  [1m[36mLink Load (0.2ms)[0m  [1mSELECT "links".* FROM "links"[0m
+  Rendered links/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 31ms (Views: 30.4ms | ActiveRecord: 0.2ms | Solr: 0.0ms)
+
+
+Started GET "/assets/links.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 141.217.54.97 at 2015-05-18 08:50:05 -0400
+Cannot render console from 141.217.54.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-3f604dfb801e9c592ace8885ccd3804afac84adc55bb48938d18918d28f78a7e.css?body=1" for 141.217.54.97 at 2015-05-18 08:50:05 -0400
+Cannot render console from 141.217.54.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 141.217.54.97 at 2015-05-18 08:50:05 -0400
+Cannot render console from 141.217.54.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 141.217.54.97 at 2015-05-18 08:50:05 -0400
+Cannot render console from 141.217.54.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 141.217.54.97 at 2015-05-18 08:50:05 -0400
+Cannot render console from 141.217.54.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/links.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 141.217.54.97 at 2015-05-18 08:50:05 -0400
+Cannot render console from 141.217.54.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 141.217.54.97 at 2015-05-18 08:50:05 -0400
+Cannot render console from 141.217.54.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/links/new" for 141.217.54.97 at 2015-05-18 08:50:08 -0400
+Cannot render console from 141.217.54.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LinksController#new as HTML
+  Rendered links/_form.html.erb (13.9ms)
+  Rendered links/new.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 38ms (Views: 37.4ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+
+
+Started POST "/links" for 141.217.54.97 at 2015-05-18 08:50:19 -0400
+Cannot render console from 141.217.54.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LinksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8wiqYyusmlw6d0RpnNAGYIYkYzZ0iL7X1JLz9WoJilrmSO8vCCccIygK//yXhSO2SFUF1Plai2U9eXrSoLkLdQ==", "link"=>{"title"=>"Bonkers", "URL"=>"http://goober.com", "html"=>"This is bonkers donkeres."}, "commit"=>"Create Link"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "links" ("title", "URL", "html", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Bonkers"], ["URL", "http://goober.com"], ["html", "This is bonkers donkeres."], ["created_at", "2015-05-18 12:50:19.913935"], ["updated_at", "2015-05-18 12:50:19.913935"]]
+  [1m[32mSOLR Request (61.5ms)[0m  [ path=[1m[1mupdate[0m parameters={} ]
+  [1m[35m (91.8ms)[0m  commit transaction
+Redirected to http://68.42.117.7:3000/links/4
+  [1m[32mSOLR Request (412.7ms)[0m  [ path=[1m[1mupdate[0m parameters={} ]
+Completed 302 Found in 570ms (ActiveRecord: 92.1ms)
+
+
+Started GET "/links/4" for 141.217.54.97 at 2015-05-18 08:50:20 -0400
+Cannot render console from 141.217.54.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LinksController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mLink Load (0.1ms)[0m  [1mSELECT  "links".* FROM "links" WHERE "links"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered links/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 25ms (Views: 23.3ms | ActiveRecord: 0.1ms | Solr: 0.0ms)
+
+
+Started GET "/links" for 141.217.54.97 at 2015-05-18 08:50:22 -0400
+Cannot render console from 141.217.54.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LinksController#index as HTML
+  [1m[35mLink Load (0.1ms)[0m  SELECT "links".* FROM "links"
+  Rendered links/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 22ms (Views: 21.5ms | ActiveRecord: 0.1ms | Solr: 0.0ms)
+
+
+Started GET "/links/search?utf8=%E2%9C%93&query=bonkers&commit=Search" for 141.217.54.97 at 2015-05-18 08:50:25 -0400
+Cannot render console from 141.217.54.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LinksController#search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"bonkers", "commit"=>"Search"}
+  [1m[32mSOLR Request (10.2ms)[0m  [ path=[1m[1mselect[0m parameters={fq: [1m[1m["type:Link"][0m, q: [1m[1m"bonkers"[0m, fl: [1m[1m"* score"[0m, qf: [1m[1m"title_texts html_texts"[0m, defType: [1m[1m"edismax"[0m, start: [1m[1m0[0m, rows: [1m[1m30[0m} ]
+  [1m[36mLink Load (0.2ms)[0m  [1mSELECT "links".* FROM "links" WHERE "links"."id" = 4[0m
+  Rendered links/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 39ms (Views: 26.5ms | ActiveRecord: 0.2ms | Solr: 10.2ms)
+
+
+Started GET "/links" for 141.217.54.97 at 2015-05-18 09:18:40 -0400
+Cannot render console from 141.217.54.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LinksController#index as HTML
+  [1m[35mLink Load (0.1ms)[0m  SELECT "links".* FROM "links"
+  Rendered links/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 22ms (Views: 21.1ms | ActiveRecord: 0.1ms | Solr: 0.0ms)
+
+
+Started GET "/links" for 141.217.54.97 at 2015-05-18 09:22:41 -0400
+Cannot render console from 141.217.54.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by LinksController#index as HTML
+  [1m[35mLink Load (0.1ms)[0m  SELECT "links".* FROM "links"
+  Rendered links/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 140ms (Views: 131.4ms | ActiveRecord: 0.4ms | Solr: 0.0ms)
+
+
+Started GET "/assets/scaffolds.self-3f604dfb801e9c592ace8885ccd3804afac84adc55bb48938d18918d28f78a7e.css?body=1" for 141.217.54.97 at 2015-05-18 09:22:41 -0400
+Cannot render console from 141.217.54.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 141.217.54.97 at 2015-05-18 09:22:41 -0400
+Cannot render console from 141.217.54.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 141.217.54.97 at 2015-05-18 09:22:42 -0400
+Cannot render console from 141.217.54.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 141.217.54.97 at 2015-05-18 09:22:42 -0400
+Cannot render console from 141.217.54.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/links.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 141.217.54.97 at 2015-05-18 09:22:42 -0400
+Cannot render console from 141.217.54.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 141.217.54.97 at 2015-05-18 09:22:42 -0400
+Cannot render console from 141.217.54.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/links.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 141.217.54.97 at 2015-05-18 09:22:42 -0400
+Cannot render console from 141.217.54.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 141.217.54.97 at 2015-05-18 09:22:42 -0400
+Cannot render console from 141.217.54.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/links/search?utf8=%E2%9C%93&query=bonkers&commit=Search" for 141.217.54.97 at 2015-05-18 09:22:45 -0400
+Cannot render console from 141.217.54.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LinksController#search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"bonkers", "commit"=>"Search"}
+  [1m[32mSOLR Request (5.2ms)[0m  [ path=[1m[1mselect[0m parameters={fq: [1m[1m["type:Link"][0m, q: [1m[1m"bonkers"[0m, fl: [1m[1m"* score"[0m, qf: [1m[1m"title_texts html_texts"[0m, defType: [1m[1m"edismax"[0m, start: [1m[1m0[0m, rows: [1m[1m30[0m} ]
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+Errno::ECONNREFUSED (Connection refused - {:data=>"fq=type%3ALink&q=bonkers&fl=*+score&qf=title_texts+html_texts&defType=edismax&start=0&rows=30", :method=>:post, :params=>{:wt=>:ruby}, :query=>"wt=ruby", :headers=>{"Content-Type"=>"application/x-www-form-urlencoded; charset=UTF-8"}, :path=>"select", :uri=>#<URI::HTTP http://localhost:8982/solr/development/select?wt=ruby>, :open_timeout=>nil, :read_timeout=>nil, :retry_503=>nil, :retry_after_limit=>nil}):
+  app/controllers/links_controller.rb:67:in `search'
+
+
+  Rendered /home/commander/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered /home/commander/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /home/commander/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/commander/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (18.3ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddAttachmentScreenshotToLinks (20150518191944)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "links" ADD "screenshot_file_name" varchar[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "links" ADD "screenshot_content_type" varchar
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "links" ADD "screenshot_file_size" integer[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "links" ADD "screenshot_updated_at" datetime
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150518191944"]]
+  [1m[35m (130.0ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
