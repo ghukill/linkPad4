@@ -5,10 +5,21 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+
+  <!-- skeleton framework -->
+  <link rel="stylesheet" href="/inc/skeleton/css/normalize.css">
+  <link rel="stylesheet" href="/inc/skeleton/css/skeleton.css">
+
 </head>
 <body>
 
-<%= yield %>
+	<div class="container">
+		<div class="row">
+			<div class="twelve columns">
+				<%= yield %>
+			</div>
+		</div>
+	</div>
 
 </body>
 </html>
