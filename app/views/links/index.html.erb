@@ -26,7 +26,7 @@
       <tr>
         <td><%= link.title %></td>
         <td><%= link.URL %></td>
-        <td><%= link.html %></td>
+        <!-- <td><%= link.html %></td> -->
         <td><%= link_to image_tag(link.screenshot.url(:thumb)), link.screenshot.url(:original) %></td>
         <td><%= link_to 'Show', link %></td>
         <td><%= link_to 'Edit', edit_link_path(link) %></td>
