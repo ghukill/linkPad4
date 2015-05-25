@@ -81,6 +81,9 @@ class LinksController < ApplicationController
 
     # print params
     puts link_params
+
+    # get HTML from saved source
+    @link.html_from_url(link_params['html'])
     
     # retrieve thumbnail from URL
     @link.picture_from_url(link_params['screenshot'])
