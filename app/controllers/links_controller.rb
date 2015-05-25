@@ -72,6 +72,30 @@ class LinksController < ApplicationController
     end
   end
 
+
+  # POST /links/create_raw
+  # POST /links/create_raw.json
+  def create_raw
+
+    @link = Link.new(link_params)
+
+    # print params
+    puts link_params
+    
+    # retrieve thumbnail from URL
+    @link.picture_from_url(link_params['screenshot'])
+
+    respond_to do |format|
+      if @link.save
+        format.html { redirect_to @link, notice: 'Link was successfully created.' }
+        format.json { render :show, status: :created, location: @link }
+      else
+        format.html { render :new }
+        format.json { render json: @link.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
   # PATCH/PUT /links/168.42.117.7:8050
   # PATCH/PUT /links/1.json
   def update
@@ -119,8 +143,7 @@ class LinksController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def link_params
-      # params.require(:link).permit(:title, :URL, :html, :query, :screenshot)
-      params.require(:link).permit(:URL)
+      params.require(:link).permit(:title, :URL, :html, :screenshot)
     end
 
 end

@@ -6,8 +6,10 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :links
 
+  # links
+  post '/links/create_raw' => 'links#create_raw'
+  resources :links
 
 
   # The priority is based upon order of creation: first created -> highest priority.

@@ -14,6 +14,7 @@ class Link < ActiveRecord::Base
   validates_attachment_content_type :screenshot, :content_type => /\Aimage\/.*\Z/
 
   def picture_from_url(url)
+    puts "Retrieving",url
     self.screenshot = open(url)
   end
 

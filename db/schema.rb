@@ -25,11 +25,4 @@ ActiveRecord::Schema.define(version: 20150518191944) do
     t.datetime "screenshot_updated_at"
   end
 
-  create_table "posts", force: :cascade do |t|
-    t.text     "title"
-    t.text     "body"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
 end
